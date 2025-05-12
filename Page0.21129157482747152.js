@@ -20219,7 +20219,7 @@ var WelcomeSection = () => {
         /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10  md:top-[20%] md:left-[10%] text-3xl  md:text-6xl rounded-none md:rounded-3xl", children: "Praxiser\xF6ffnung am 01.07.2025" }),
         /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Card, { className: "z-10  md:top-[65%] md:left-[10%] w-full  md:w-[80%] rounded-none md:rounded-3xl", children: [
           /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { className: "mb-4 text-2xl font-bold  ", children: "Herzlich willkommen!" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl", children: " Wir freuen uns, Sie. in unserer psychotherapeutischen Praxis im Herzen von Basel begr\xFCssen zu d\xFCrfen" })
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl", children: " Wir freuen uns, Sie in unserer psychotherapeutischen Praxis im Herzen von Basel begr\xFCssen zu d\xFCrfen" })
         ] })
       ]
     }
