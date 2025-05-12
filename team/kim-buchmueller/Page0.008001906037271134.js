@@ -19861,7 +19861,7 @@ var init_Header = __esm({
       console.log("location", location);
       return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full bg-[var(--color-primary)] p-4 md:p-6 flex items-center justify-between z-50 h-20", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "330px", height: "200px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "250px", height: "150px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("ul", { className: "hidden md:flex space-x-6 m-0 p-0", children: location.map((l) => {
             return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
               "a",
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/annette-gnatzy/Page.tsx
+// src/team/kim-buchmueller/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,7 +20185,7 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/annette-gnatzy/Page.tsx
+// src/team/kim-buchmueller/Page.tsx
 init_ContactForm();
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
@@ -20196,55 +20196,83 @@ var Page = () => {
   ] });
 };
 var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      "img",
+      {
+        src: "/public/img/kim.jpeg",
+        alt: "M.Sc. Kim Buchm\xFCller",
+        className: "w-full h-full rounded-full object-cover"
+      }
+    ) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Kim Buchm\xFCller" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl mt-4 text-[#e4c58a] font-bold", children: "Dr. med. Dipl.-Psych. Annette Gnatzy" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-[#e4c58a]", children: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Mein Schwerpunkt liegt in der Begleitung von Menschen mit depressiven Krisen, Burn-out, PTBS, komplexen Traumafolgest\xF6rungen, \xC4ngsten (allgemein, spezifisch) sowie Krebspatienten und deren Angeh\xF6rigen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich biete Supervision und Selbsterfahrung f\xFCr Psychotherapeuten und \xC4rzte an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Weiterbildungen" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Postgradualer Studiengang CAS Supervision (PSP Basel)",
-          "Postgradualer Studiengang CAS Selbsterfahrung (PSP Basel)",
-          "Weiterbildung psychosoziale Onkologie (WPO Freiburg)",
-          "CAS Health Care Management Psychiatrie, Psychotherapie und Klinische Psychologie (HWZ, Hochschule f\xFCr Wirtschaft Z\xFCrich)",
-          "Swiss Ensurance Medicine (SIM)",
-          "Kognitive Verhaltenstherapie",
-          "Systemische Therapie",
-          "EMDR"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "In meiner therapeutischen Arbeit ist es mir wichtig einen vertrauensvollen und sicheren Rahmen zu schaffen, in dem Ihre Anliegen mit Offenheit, Wertfreiheit und Neugier erkundet werden k\xF6nnen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich arbeite mit Methoden der systemischen Psychotherapie, wobei Klient*innen als Expert*innen ihrer selbst betrachtet werden. Gemeinsam entwickeln wir ein Verst\xE4ndnis f\xFCr Ihre Belastungen. Ich begleite Sie im Rahmen des therapeutischen Prozesses dabei, einen neuen Umgang mit Ihren Problemen zu finden sowie neue Perspektiven zu entwickeln und arbeite ressourcen-, prozess- und zielorientiert." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Eine von Wertsch\xE4tzung, Empathie und Respekt gepr\xE4gte Grundhaltung f\xFCr eine Begegnung auf Augenh\xF6he ist mir dabei besonders wichtig. Ich biete Einzeltherapie f\xFCr Erwachsene sowie Angeh\xF6rigengespr\xE4che an." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Aus- und Weiterbildung" }),
+        [
+          {
+            year: "2019\u20132023",
+            title: "Ausbildung zur eidg. anerkannten Psychotherapeutin",
+            desc: "Institut f\xFCr systemische Entwicklung und Fortbildung (IEF), Z\xFCrich"
+          },
+          {
+            year: "2017\u20132019",
+            title: "Master of Science in Psychology",
+            desc: "Universit\xE4t Basel"
+          },
+          {
+            year: "2013\u20132017",
+            title: "Bachelor of Science in Psychology",
+            desc: "Universit\xE4t Basel"
+          }
+        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
+        ] }, idx))
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Studien" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Psychologie (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)",
-          "Medizin (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Berufserfahrung" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Leitende \xC4rztin Ambulatorium Rheinfelden, Klinik Sch\xFCtzen (CH)",
-          "Leitende \xC4rztin Ambulatorium Aarau, Klinik Barmelweid (CH)",
-          "Ober\xE4rztin Ambulatorium und Tagesklinik Reinach, Klinik Sonnenhalde (CH)",
-          "Praxist\xE4tigkeit Bonn (D)",
-          "Assistenz\xE4rztin, Universit\xE4tsklinik Bonn (D)",
-          "Neurologisches Fremdjahr, Universit\xE4tsklinik Bonn (D)",
-          "Assistenz\xE4rztin, Marienhospital Euskirchen (D)"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Mitgliedschaften" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: ["\xC4rztekammer Nordrhein", "FMH", "EMDIRA"].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Beruflicher Werdegang" }),
+        [
+          {
+            year: "2022 \u2013 2025",
+            title: "Psychotherapeutin",
+            desc: "Tagesklinik und Ambulatorium Sonnenbrugg, Klinik Sonnenhalde, Reinach"
+          },
+          {
+            year: "2019 \u2013 2022",
+            title: "Psychologin, M.Sc.",
+            desc: "Suchthilfe Region Basel, Klinik ESTA: station\xE4re Entw\xF6hnungstherapie, Einzel- und Gruppentherapie"
+          },
+          {
+            year: "2017 \u2013 2019",
+            title: "Betreuung und Nachtdienst",
+            desc: "Suchthilfe Region Basel, Klinik ESTA"
+          },
+          {
+            year: "",
+            title: "Psychologie-Praktika",
+            desc: "Klinik SIGMA-Zentrum (DE), PDAG, Schule in Costa Rica"
+          }
+        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
+        ] }, idx))
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "a@pycho.ch" })
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "kim.buchmueller@psychologie.ch" }),
+    " "
   ] });
 };
 var Page_default = {
   main: Page,
-  title: "Dr. med. Dipl. Psych. Annette Gnatzy"
+  title: "M.Sc. Kim Buchm\xFCller"
 };
 export {
   Page_default as default

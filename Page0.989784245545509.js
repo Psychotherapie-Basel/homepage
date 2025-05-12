@@ -19861,7 +19861,7 @@ var init_Header = __esm({
       console.log("location", location);
       return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full bg-[var(--color-primary)] p-4 md:p-6 flex items-center justify-between z-50 h-20", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "330px", height: "200px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "250px", height: "150px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("ul", { className: "hidden md:flex space-x-6 m-0 p-0", children: location.map((l) => {
             return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
               "a",
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/anfahrt/Page.tsx
+// src/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,142 +20185,118 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/Page.tsx
-init_Header();
-init_TeamCard();
-
 // src/components/Card.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+var Card = ({ padding = 6, children, className = "" }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
+};
 
-// src/team/Page.tsx
+// src/components/CardContainer.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
-var teamMembers = [
-  // {
-  //   name: "Dr. med. Dipl. Psych. Annette Gnatzy",
-  //   title: "Fachärztin Psychiatrie und Psychotherapie",
-  //   description: "",
-  //   image: "/public/img/kim.png",
-  //   profileLink: "/team/annette-gnatzy",
-  //   formLink: "/team/annette-gnatzy/#kontaktformular",
-  // },
-  {
-    name: "M.Sc. Stefanie Mujic",
-    title: "Eidg. anerkannte Psychotherapeutin",
-    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
-    image: "/public/img/stefanie-mujic.jpg",
-    formLink: "/team/stefanie-mujic#kontaktformular",
-    profileLink: "/team/stefanie-mujic"
-  },
-  {
-    name: "M.Sc. Ann-Kathrin Scholz",
-    title: "Eidg. anerkannte Psychotherapeutin",
-    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
-    image: "/public/img/a.scholz.jpg",
-    profileLink: "/team/ann-kathrin-scholz",
-    formLink: "/team/ann-kathrin-scholz#kontaktformular"
-  },
-  {
-    name: "M.Sc. Kim Buchm\xFCller",
-    title: "Eidg. anerkannte Psychotherapeutin",
-    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
-    image: "/public/img/kim.jpeg",
-    formLink: "/team/kim-buchmueller#kontaktformular",
-    profileLink: "/team/kim-buchmueller"
-  }
-];
+var CardContainer = ({ children, className = "" }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "flex flex-col gap-6 md:block h-full " + className, children });
+};
 
-// src/anfahrt/Page.tsx
+// src/Page.tsx
 var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(LocationInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(WelcomeSection, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery2, {}),
     /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Footer_default, {})
   ] });
 };
-var LocationInfo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "flex-grow p-6 flex items-center mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Praxisstandort" }),
-      "Kanonengasse 19, 4051 Basel"
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-      "iframe",
+var WelcomeSection = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
+    "section",
+    {
+      className: "relative flex items-end justify-center text-center flex-col gap-6 h-screen overflow-hidden bg-fixed bg-center bg-cover",
+      style: { backgroundImage: "url('/public/img/bg-1.png')" },
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { class: "absolute inset-0 bg-[#fff8e9bf] bg-opacity-20 z-10" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10  md:top-[20%] md:left-[10%] text-3xl  md:text-6xl rounded-none md:rounded-3xl", children: "Praxiser\xF6ffnung am 01.07.2025" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Card, { className: "z-10  md:top-[65%] md:left-[10%] w-full  md:w-[80%] rounded-none md:rounded-3xl", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { className: "mb-4 text-2xl font-bold  ", children: "Herzlich willkommen!" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl", children: " Wir freuen uns, Sie. in unserer psychotherapeutischen Praxis im Herzen von Basel begr\xFCssen zu d\xFCrfen" })
+        ] })
+      ]
+    }
+  );
+};
+var Gallery = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[10%] md:left-[10%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Angebot" }),
+      " richtet sich an Erwachsene und umfasst Psychotherapie im Einzelsetting, Angeh\xF6rigengespr\xE4che sowie Paartherapie, individuell auf Sie abgestimmt."
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+      Card,
       {
-        className: "w-full h-96 rounded-3xl",
-        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8949489897116!2d7.585945676385137!3d47.55004277117698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791bba315d1b5d3%3A0x91ba719e3d27a615!2sKanonengasse%2019%2C%204051%20Basel%2C%20Schweiz!5e0!3m2!1sde!2sch!4v1714233181173!5m2!1sde!2sch",
-        loading: "lazy",
-        referrerPolicy: "no-referrer-when-downgrade",
-        allowFullScreen: true
+        padding: 0,
+        className: "z-0 w-full h-[50%] p-0 bg-transparent shadow-none md:top-[50%] md:left-[50%] md:w-[40%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+        children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+          "img",
+          {
+            src: "/public/img/2.png",
+            alt: "Praxis Bild",
+            className: "w-full h-full object-cover rounded-3xl"
+          }
+        )
       }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex flex-col gap-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Wegbeschreibung" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-semibold", children: "Mit dem \xF6ffentlichen Verkehrsmittel" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("ul", { className: "list-none ", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("li", { children: [
-            "Bus 30 bis zur",
-            " ",
-            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-              "a",
+    ),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "w-full pt-4 px-4 pb-6 md:w-[30%] md:bottom-[10%] md:right-[10%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: "In einem vertrauensvollen und gesch\xFCtzten Rahmen begleiten und unterst\xFCtzen wir Sie professionell bei der Bew\xE4ltigung psychischer Belastungen und in herausfordernden Lebenssituationen." }) })
+  ] }) }) });
+};
+var Gallery2 = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: [
+    " ",
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: [
+      " ",
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
+        " ",
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+          Card,
+          {
+            padding: 0,
+            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[18%] md:left-[70%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+              "img",
               {
-                href: "https://www.google.com/maps/search/?api=1&query=Haltestelle+Steinenschanze,4051+Basel",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                className: "underline hover:text-[var(--color-accent)] transition-colors",
-                children: "Haltestelle Steinenschanze"
+                src: "/public/img/1.png",
+                alt: "Praxis Bild",
+                className: "w-full h-full object-cover rounded-3xl"
               }
             )
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: "Diverse Tramlinien (3,6,8,11) bis Barf\xFCsserplatz oder Haltestelle Theater (6)" })
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-semibold", children: "Mit dem Auto" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("ul", { className: "list-none", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("li", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-            "a",
-            {
-              href: "https://maps.app.goo.gl/8yYk76rPW9ckYupcA",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "underline hover:text-[var(--color-accent)] transition-colors",
-              children: "Parkhaus Steinen, Steinenschanze 5"
-            }
-          ),
-          ", 4051 Basel, Ausgang im 1. OG"
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+          Card,
+          {
+            padding: 0,
+            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[60%] md:left-[60%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+              "img",
+              {
+                src: "/public/img/3.png",
+                alt: "Praxis Bild",
+                className: "w-full h-full object-cover rounded-3xl"
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[5%] md:left-[20%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Team" }),
+          " besteht aus drei Fachpsychologinnen f\xFCr Psychotherapie sowie einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Wir arbeiten mit Methoden aus der kognitiv verhaltenstherapeutischen sowie systemischen Psychotherapie."
         ] }) })
       ] })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Kontaktaufnahme" }),
-      "Bitte melden Sie sich direkt bei der gew\xFCnschten Behandlerin \xFCber das Kontaktformular:"
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
-      "a",
-      {
-        href: member.formLink,
-        className: "flex flex-row sm:flex-col items-center sm:items-center text-left sm:text-center gap-4 sm:gap-4 hover:text-[var(--color-accent)] transition-colors",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-            "img",
-            {
-              src: member.image,
-              alt: member.name,
-              className: "w-full h-full rounded-full object-cover"
-            }
-          ) }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-xl font-bold", children: member.name })
-        ]
-      },
-      index
-    )) })
-  ] }) });
+    ] })
+  ] });
 };
 var Page_default = {
   main: Page,
-  title: "Psychotherapie Basel - Anfahrt"
+  title: "Psychotherapie Basel - Angebot"
 };
 export {
   Page_default as default

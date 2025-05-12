@@ -1026,6 +1026,12 @@
       padding: calc(var(--spacing) * 6);
     }
   }
+  .md\:text-6xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
 }
 @font-face {
   font-family: InterVariable;

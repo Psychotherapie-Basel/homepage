@@ -19861,7 +19861,7 @@ var init_Header = __esm({
       console.log("location", location);
       return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full bg-[var(--color-primary)] p-4 md:p-6 flex items-center justify-between z-50 h-20", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "330px", height: "200px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "250px", height: "150px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("ul", { className: "hidden md:flex space-x-6 m-0 p-0", children: location.map((l) => {
             return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
               "a",
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/ann-kathrin-scholz/Page.tsx
+// src/team/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,103 +20185,71 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/ann-kathrin-scholz/Page.tsx
-init_ContactForm();
+// src/team/Page.tsx
+init_TeamCard();
+
+// src/components/Card.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+var Card = ({ padding = 6, children, className = "" }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
+};
+
+// src/team/Page.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "w-full flex flex-col p-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-full mb-8 mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Card, { className: "static md:relative md:w-[50%] md:left-[25%]", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "font-thin text-2xl", children: "Wir sind ein Team aus drei Fachpsychologinnen f\xFCr Psychotherapie und einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Um mit der gew\xFCnschten Person in Kontakt zu treten, f\xFCllen Sie bitte das Kontaktformular im entsprechenden Profil aus." }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Team, {})
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "img",
-      {
-        src: "/public/img/a.scholz.jpg",
-        alt: "M.Sc. Ann-Kathrin Scholz",
-        className: "w-full h-full rounded-full object-cover"
-      }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Ann-Kathrin Scholz" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Ich bin Verhaltenstherapeutin und biete Erwachsenen Einzel- sowie Paartherapie an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich bin geb\xFCrtig aus dem Nordwesten Deutschlands und habe dort bis Ende 2023 gelebt und gearbeitet. Ich habe mich im Bereich der Neuropsychologie und der Psychotherapie aus- und weitergebildet und bin seit 2020 approbierte respektive anerkannte Psychotherapeutin. 2024 bin ich aus pers\xF6nlichen Gr\xFCnden in die Schweiz gezogen und freue mich nun, mich beruflich erneut in eigener Praxis niederzulassen und zu verwirklichen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Mein therapeutischer Fokus liegt auf dem Aufbau einer tragf\xE4higen therapeutischen Beziehung und der Arbeit in die Tiefe. Mir macht es Spass, gemeinsam mit meinen KlientInnen zu analysieren und individuelle Modelle zu erarbeiten, damit wir die vorliegende Belastungssituation und die Beschwerden gemeinsam m\xF6glichst gut verstehen k\xF6nnen. Auf Basis dieses Verst\xE4ndnisses k\xF6nnen wir dann zielgerichtet einzelne Themen und Anliegen bearbeiten. In meiner therapeutischen Arbeit kombiniere ich klassische verhaltenstherapeutische Methoden gerne mit Interventionen aus dem Bereich der Impact- und Schematherapie. Als Therapeutin sind mir Vertrauen, Wertfreiheit und Transparenz besonders wichtig. In diesem sicheren Raum unserer Therapie k\xF6nnen dann st\xFCtzende, hilfreiche wie zielf\xFChrende Therapieprozesse entstehen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "In der Paartherapie lege ich meinen Fokus auf die F\xF6rderung von Kommunikation und den Aufbau einer gesunden Konfliktkultur. Dabei geht es vor allem darum, gemeinsam die Paardynamik zu verstehen und die zugrundeliegenden Probleme aufzudecken und zu l\xF6sen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Pers\xF6nlicher Werdegang" }),
-        [
-          {
-            year: "2009\u20132012",
-            title: "Bachelor Studium Psychologie",
-            desc: "Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2012\u20132014",
-            title: "Master Studium Psychologie",
-            desc: "Schwerpunkt auf klinische Psychologie und Neurowissenschaften an der Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2014\u20132016",
-            title: "Neuropsychologin",
-            desc: "Ambulante Neuroreha Savita Neuss, Deutschland"
-          },
-          {
-            year: "2016\u20132018",
-            title: "Neuropsychologin & Psychotherapeutin in Ausbildung",
-            desc: "Neuropsychiatrie VAMED Klinik Hattingen, Deutschland"
-          },
-          {
-            year: "2017\u20132020",
-            title: "Ausbildung zur psych. Psychotherapeutin",
-            desc: "Akademie f\xFCr Verhaltenstherapie K\xF6ln, Deutschland"
-          },
-          {
-            year: "2018\u20132021",
-            title: "Psychotherapeutin Gerontopsychiatrie",
-            desc: "LVR Klinik D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2019",
-            title: "Publikation Therapieansatz",
-            desc: 'Ver\xF6ffentlichung des "cc-Konzepts" \u2013 Integratives Therapiekonzept bei Ged\xE4chtnisverlust und neurokognitiven St\xF6rungen (Hogrefe Verlag)'
-          },
-          {
-            year: "2020\u20132024",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Gemeinschaftspraxis Wendenburg & Kollegen, D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2024\u20132025",
-            title: "Psychotherapeutin",
-            desc: "Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden, Schweiz"
-          },
-          {
-            year: "2025",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Eigene Praxis in Basel, Schweiz"
-          }
-        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
-        ] }, idx))
-      ] })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "ann-kathrin.scholz@psychologie.ch" })
-  ] });
+var teamMembers = [
+  // {
+  //   name: "Dr. med. Dipl. Psych. Annette Gnatzy",
+  //   title: "Fachärztin Psychiatrie und Psychotherapie",
+  //   description: "",
+  //   image: "/public/img/kim.png",
+  //   profileLink: "/team/annette-gnatzy",
+  //   formLink: "/team/annette-gnatzy/#kontaktformular",
+  // },
+  {
+    name: "M.Sc. Stefanie Mujic",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/stefanie-mujic.jpg",
+    formLink: "/team/stefanie-mujic#kontaktformular",
+    profileLink: "/team/stefanie-mujic"
+  },
+  {
+    name: "M.Sc. Ann-Kathrin Scholz",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/a.scholz.jpg",
+    profileLink: "/team/ann-kathrin-scholz",
+    formLink: "/team/ann-kathrin-scholz#kontaktformular"
+  },
+  {
+    name: "M.Sc. Kim Buchm\xFCller",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/kim.jpeg",
+    formLink: "/team/kim-buchmueller#kontaktformular",
+    profileLink: "/team/kim-buchmueller"
+  }
+];
+var Team = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("section", { className: "w-full flex justify-center p-6", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl w-full", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(TeamCard_default, { ...member }, index)) }) });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Ann-Kathrin Scholz"
+  title: "Psychotherapie Basel - Team"
 };
 export {
-  Page_default as default
+  Page_default as default,
+  teamMembers
 };
 /*! Bundled license information:
 

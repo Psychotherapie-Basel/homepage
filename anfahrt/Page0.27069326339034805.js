@@ -19861,7 +19861,7 @@ var init_Header = __esm({
       console.log("location", location);
       return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full bg-[var(--color-primary)] p-4 md:p-6 flex items-center justify-between z-50 h-20", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "330px", height: "200px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "250px", height: "150px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("ul", { className: "hidden md:flex space-x-6 m-0 p-0", children: location.map((l) => {
             return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
               "a",
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/stefanie-mujic/Page.tsx
+// src/anfahrt/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,68 +20185,142 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/stefanie-mujic/Page.tsx
-init_ContactForm();
+// src/team/Page.tsx
+init_Header();
+init_TeamCard();
+
+// src/components/Card.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+
+// src/team/Page.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+var teamMembers = [
+  // {
+  //   name: "Dr. med. Dipl. Psych. Annette Gnatzy",
+  //   title: "Fachärztin Psychiatrie und Psychotherapie",
+  //   description: "",
+  //   image: "/public/img/kim.png",
+  //   profileLink: "/team/annette-gnatzy",
+  //   formLink: "/team/annette-gnatzy/#kontaktformular",
+  // },
+  {
+    name: "M.Sc. Stefanie Mujic",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/stefanie-mujic.jpg",
+    formLink: "/team/stefanie-mujic#kontaktformular",
+    profileLink: "/team/stefanie-mujic"
+  },
+  {
+    name: "M.Sc. Ann-Kathrin Scholz",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/a.scholz.jpg",
+    profileLink: "/team/ann-kathrin-scholz",
+    formLink: "/team/ann-kathrin-scholz#kontaktformular"
+  },
+  {
+    name: "M.Sc. Kim Buchm\xFCller",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/kim.jpeg",
+    formLink: "/team/kim-buchmueller#kontaktformular",
+    profileLink: "/team/kim-buchmueller"
+  }
+];
+
+// src/anfahrt/Page.tsx
+var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(LocationInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "img",
+var LocationInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "flex-grow p-6 flex items-center mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Praxisstandort" }),
+      "Kanonengasse 19, 4051 Basel"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+      "iframe",
       {
-        src: "/public/img/stefanie-mujic.jpg",
-        alt: "M.Sc. Stefanie Mujic",
-        className: "w-full h-full rounded-full object-cover"
+        className: "w-full h-96 rounded-3xl",
+        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8949489897116!2d7.585945676385137!3d47.55004277117698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791bba315d1b5d3%3A0x91ba719e3d27a615!2sKanonengasse%2019%2C%204051%20Basel%2C%20Schweiz!5e0!3m2!1sde!2sch!4v1714233181173!5m2!1sde!2sch",
+        loading: "lazy",
+        referrerPolicy: "no-referrer-when-downgrade",
+        allowFullScreen: true
       }
     ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Stefanie Mujic" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Als Psychotherapeutin ist mir eine vertrauensvolle therapeutische Beziehung besonders wichtig \u2013 denn sie bildet die Grundlage f\xFCr jede wirksame Psychotherapie. Ich begegne meinen Patient*innen auf Augenh\xF6he, mit Offenheit, Empathie und Wertsch\xE4tzung. Als kognitive Verhaltenstherapeutin arbeite ich ressourcen-, l\xF6sungs- und zielorientiert und unterst\xFCtze meine Patient*innen in ihrer Selbstwirksamkeit." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Ausbildung & Weiterbildung" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2018" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Abschluss des Psychologiestudiums an der Universit\xE4t Basel" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2022" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Abschluss der postgradualen Ausbildung zur Psychotherapeutin in kognitiver Verhaltenstherapie (PSP Basel), Master of Advanced Studies in Psychotherapie (MAS)" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2023\u20132024" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Zus\xE4tzliche Weiterbildungen in Schematherapie (2023/2024) und Akzeptanz- und Commitment-Therapie (2023)" })
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Wegbeschreibung" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-semibold", children: "Mit dem \xF6ffentlichen Verkehrsmittel" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("ul", { className: "list-none ", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("li", { children: [
+            "Bus 30 bis zur",
+            " ",
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+              "a",
+              {
+                href: "https://www.google.com/maps/search/?api=1&query=Haltestelle+Steinenschanze,4051+Basel",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "underline hover:text-[var(--color-accent)] transition-colors",
+                children: "Haltestelle Steinenschanze"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: "Diverse Tramlinien (3,6,8,11) bis Barf\xFCsserplatz oder Haltestelle Theater (6)" })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Beruflicher Werdegang" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2023 \u2013 31.05.2025" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Eidg. anerkannte Psychotherapeutin im Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "15.02.2021 \u2013 31.12.2022" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Psychologin in der Tagesklinik und im Ambulatorium Sonnenbrugg in Reinach BL, Klinik Sonnenhalde" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2019 \u2013 14.02.2021" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Assistenzpsychologin in der Klinik Sonnenhalde, Riehen" })
-        ] })
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-semibold", children: "Mit dem Auto" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("ul", { className: "list-none", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+            "a",
+            {
+              href: "https://maps.app.goo.gl/8yYk76rPW9ckYupcA",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "underline hover:text-[var(--color-accent)] transition-colors",
+              children: "Parkhaus Steinen, Steinenschanze 5"
+            }
+          ),
+          ", 4051 Basel, Ausgang im 1. OG"
+        ] }) })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "stefanie.mujic@psychologie.ch" })
-  ] });
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Kontaktaufnahme" }),
+      "Bitte melden Sie sich direkt bei der gew\xFCnschten Behandlerin \xFCber das Kontaktformular:"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
+      "a",
+      {
+        href: member.formLink,
+        className: "flex flex-row sm:flex-col items-center sm:items-center text-left sm:text-center gap-4 sm:gap-4 hover:text-[var(--color-accent)] transition-colors",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+            "img",
+            {
+              src: member.image,
+              alt: member.name,
+              className: "w-full h-full rounded-full object-cover"
+            }
+          ) }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-xl font-bold", children: member.name })
+        ]
+      },
+      index
+    )) })
+  ] }) });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Stefanie Mujic"
+  title: "Psychotherapie Basel - Anfahrt"
 };
 export {
   Page_default as default

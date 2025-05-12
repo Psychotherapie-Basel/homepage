@@ -19861,7 +19861,7 @@ var init_Header = __esm({
       console.log("location", location);
       return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full bg-[var(--color-primary)] p-4 md:p-6 flex items-center justify-between z-50 h-20", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "330px", height: "200px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "250px", height: "150px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("ul", { className: "hidden md:flex space-x-6 m-0 p-0", children: location.map((l) => {
             return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
               "a",
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/Page.tsx
+// src/notfall/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,71 +20185,126 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/Page.tsx
-init_TeamCard();
-
-// src/components/Card.tsx
+// src/notfall/Page.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
-var Card = ({ padding = 6, children, className = "" }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
-};
-
-// src/team/Page.tsx
-var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "w-full flex flex-col p-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-full mb-8 mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Card, { className: "static md:relative md:w-[50%] md:left-[25%]", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "font-thin text-2xl", children: "Wir sind ein Team aus drei Fachpsychologinnen f\xFCr Psychotherapie und einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Um mit der gew\xFCnschten Person in Kontakt zu treten, f\xFCllen Sie bitte das Kontaktformular im entsprechenden Profil aus." }) }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Team, {})
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(EmergencyInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
   ] });
 };
-var teamMembers = [
-  // {
-  //   name: "Dr. med. Dipl. Psych. Annette Gnatzy",
-  //   title: "Fachärztin Psychiatrie und Psychotherapie",
-  //   description: "",
-  //   image: "/public/img/kim.png",
-  //   profileLink: "/team/annette-gnatzy",
-  //   formLink: "/team/annette-gnatzy/#kontaktformular",
-  // },
-  {
-    name: "M.Sc. Stefanie Mujic",
-    title: "Eidg. anerkannte Psychotherapeutin",
-    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
-    image: "/public/img/stefanie-mujic.jpg",
-    formLink: "/team/stefanie-mujic#kontaktformular",
-    profileLink: "/team/stefanie-mujic"
-  },
-  {
-    name: "M.Sc. Ann-Kathrin Scholz",
-    title: "Eidg. anerkannte Psychotherapeutin",
-    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
-    image: "/public/img/a.scholz.jpg",
-    profileLink: "/team/ann-kathrin-scholz",
-    formLink: "/team/ann-kathrin-scholz#kontaktformular"
-  },
-  {
-    name: "M.Sc. Kim Buchm\xFCller",
-    title: "Eidg. anerkannte Psychotherapeutin",
-    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
-    image: "/public/img/kim.jpeg",
-    formLink: "/team/kim-buchmueller#kontaktformular",
-    profileLink: "/team/kim-buchmueller"
-  }
-];
-var Team = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("section", { className: "w-full flex justify-center p-6", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl w-full", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(TeamCard_default, { ...member }, index)) }) });
+var EmergencyInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-6xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "text-center", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-4xl font-bold mb-4", children: "Notfall" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "leading-relaxed", children: "Falls Sie sich in einer akuten psychischen Krise befinden oder sofortige Hilfe ben\xF6tigen, wenden Sie sich bitte an eine der folgenden Notfallnummern:" })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-3xl font-bold mb-2", children: "Allgemeine Nummern" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Sanit\xE4tsnotruf",
+          number: "144",
+          logo: "/public/logos/sani.png",
+          description: "In lebensbedrohlichen Situationen immer direkt anrufen",
+          website: "https://www.bs.ch/jsd/rettung/unsere-organisation/sanitaet/rettungsdienst"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Medizinische Notrufzentrale",
+          number: "+41 61 261 15 15",
+          logo: "/public/logos/mnz.svg",
+          description: "Medizinische Notfallzentrale f\xFCr BS, BL und SO.",
+          website: "https://www.mnznotruf.ch/de/notrufzentrale.html"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Dargebotene Hand",
+          number: "143",
+          logo: "/public/logos/143.svg",
+          description: "Anonyme telefonische Beratung, 24h verf\xFCgbar",
+          website: "https://www.143.ch/"
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bs.png", className: "w-full h-full object-contain" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Kriseninterventionsstation (KIS)",
+          number: "+41 61 325 51 00",
+          logo: "/public/logos/upk.svg",
+          address: "Wilhelm Klein-Strasse 27, 4002 Basel",
+          description: "Patientenaufnahme & Notfall Psychiatrie 24h f\xFCr Erwachsene",
+          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/zentrum-fuer-diagnostik-und-krisenintervention/kriseninterventionsstation"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Gesundheitszentrum Psychiatrie Basel",
+          number: "+41 61 325 81 81",
+          logo: "/public/logos/upk.svg",
+          address: "Kornhausgasse 7, 4051 Basel (Mo-Fr, 08:00\u201316:00)",
+          description: "Psychiatrische Hilfe werktags",
+          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/gesundheitszentrum-psychiatrie"
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bl.png", className: "w-full h-full object-contain" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      EmergencyCard,
+      {
+        title: "Psychiatrie Baselland (PBL)",
+        number: "+41 61 553 56 56",
+        logo: "/public/logos/pbl.svg",
+        address: "Bienentalstrasse 7, 4410 Liestal",
+        description: "Zentrale Aufnahme, Notfallversorgung",
+        website: "https://www.pbl.ch/"
+      }
+    ) }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: " text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-2xl leading-relaxed  text-gray-600", children: "Bitte beachten Sie, dass wir in unserer Praxis keine Behandlung f\xFCr Personen mit Substanzgebrauch, akuter Suizidalit\xE4t oder psychotischen Symptomen anbieten k\xF6nnen. In diesen F\xE4llen empfehlen wir dringend, sich an eine psychiatrische Klinik oder eine spezialisierte Fachstelle zu wenden." }) })
+  ] }) });
+};
+var EmergencyCard = ({ title, number, description, address, logo, website }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "bg-white p-6 rounded-3xl shadow-md flex flex-col items-center text-center gap-4 hover:shadow-lg hover:scale-105 transition-all duration-300", children: [
+    logo && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-24 h-24", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { src: logo, alt: `${title} Logo`, className: "w-full h-full object-contain" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "font-bold text-xl", children: title }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      "a",
+      {
+        href: `tel:${number.replace(/\s+/g, "")}`,
+        className: "text-lg text-[var(--color-accent)] hover:underline break-words",
+        children: number
+      }
+    ),
+    website && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      "a",
+      {
+        href: website,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "text-sm text-blue-500 hover:underline break-words",
+        children: "Website besuchen"
+      }
+    ),
+    description && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-xl text-gray-500", children: description }),
+    address && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm text-gray-500", children: address })
+  ] });
 };
 var Page_default = {
   main: Page,
-  title: "Psychotherapie Basel - Team"
+  title: "Notfall"
 };
 export {
-  Page_default as default,
-  teamMembers
+  Page_default as default
 };
 /*! Bundled license information:
 
