@@ -19968,7 +19968,7 @@ var init_ContactForm = __esm({
       const [email, setEmail] = (0, import_react5.useState)("");
       const [address, setAddress] = (0, import_react5.useState)("");
       const [message, setMessage] = (0, import_react5.useState)("");
-      const isFormValid = firstName.trim() && lastName.trim() && birthdate.trim() && email.trim() && message.trim();
+      const isFormValid = firstName.trim() && firstName.trim().length > 1 && lastName.trim() && lastName.trim().length > 1 && birthdate.trim() && birthdate.trim().length > 1 && email.trim() && email.trim().length > 1 && message.trim() && message.trim().length > 1;
       const mailtoLink = isFormValid ? `mailto:${recipientEmail}?subject=${encodeURIComponent(`Kontaktanfrage von ${firstName} ${lastName}`)}&body=${encodeURIComponent(
         `Vorname: ${firstName}
 Nachname: ${lastName}
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/ann-kathrin-scholz/Page.tsx
+// src/team/stefanie-mujic/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,7 +20185,7 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/ann-kathrin-scholz/Page.tsx
+// src/team/stefanie-mujic/Page.tsx
 init_ContactForm();
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
@@ -20200,85 +20200,53 @@ var Content = () => {
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
       "img",
       {
-        src: "/public/img/a.scholz.jpg",
-        alt: "M.Sc. Ann-Kathrin Scholz",
+        src: "/public/img/stefanie-mujic.jpg",
+        alt: "M.Sc. Stefanie Mujic",
         className: "w-full h-full rounded-full object-cover"
       }
     ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Ann-Kathrin Scholz" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Stefanie Mujic" }),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Ich bin Verhaltenstherapeutin und biete Erwachsenen Einzel- sowie Paartherapie an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich bin geb\xFCrtig aus dem Nordwesten Deutschlands und habe dort bis Ende 2023 gelebt und gearbeitet. Ich habe mich im Bereich der Neuropsychologie und der Psychotherapie aus- und weitergebildet und bin seit 2020 approbierte respektive anerkannte Psychotherapeutin. 2024 bin ich aus pers\xF6nlichen Gr\xFCnden in die Schweiz gezogen und freue mich nun, mich beruflich erneut in eigener Praxis niederzulassen und zu verwirklichen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Mein therapeutischer Fokus liegt auf dem Aufbau einer tragf\xE4higen therapeutischen Beziehung und der Arbeit in die Tiefe. Mir macht es Spass, gemeinsam mit meinen KlientInnen zu analysieren und individuelle Modelle zu erarbeiten, damit wir die vorliegende Belastungssituation und die Beschwerden gemeinsam m\xF6glichst gut verstehen k\xF6nnen. Auf Basis dieses Verst\xE4ndnisses k\xF6nnen wir dann zielgerichtet einzelne Themen und Anliegen bearbeiten. In meiner therapeutischen Arbeit kombiniere ich klassische verhaltenstherapeutische Methoden gerne mit Interventionen aus dem Bereich der Impact- und Schematherapie. Als Therapeutin sind mir Vertrauen, Wertfreiheit und Transparenz besonders wichtig. In diesem sicheren Raum unserer Therapie k\xF6nnen dann st\xFCtzende, hilfreiche wie zielf\xFChrende Therapieprozesse entstehen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "In der Paartherapie lege ich meinen Fokus auf die F\xF6rderung von Kommunikation und den Aufbau einer gesunden Konfliktkultur. Dabei geht es vor allem darum, gemeinsam die Paardynamik zu verstehen und die zugrundeliegenden Probleme aufzudecken und zu l\xF6sen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Als Psychotherapeutin ist mir eine vertrauensvolle therapeutische Beziehung besonders wichtig \u2013 denn sie bildet die Grundlage f\xFCr jede wirksame Psychotherapie. Ich begegne meinen Patient*innen auf Augenh\xF6he, mit Offenheit, Empathie und Wertsch\xE4tzung. Als kognitive Verhaltenstherapeutin arbeite ich ressourcen-, l\xF6sungs- und zielorientiert und unterst\xFCtze meine Patient*innen in ihrer Selbstwirksamkeit." }),
       /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Pers\xF6nlicher Werdegang" }),
-        [
-          {
-            year: "2009\u20132012",
-            title: "Bachelor Studium Psychologie",
-            desc: "Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2012\u20132014",
-            title: "Master Studium Psychologie",
-            desc: "Schwerpunkt auf klinische Psychologie und Neurowissenschaften an der Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2014\u20132016",
-            title: "Neuropsychologin",
-            desc: "Ambulante Neuroreha Savita Neuss, Deutschland"
-          },
-          {
-            year: "2016\u20132018",
-            title: "Neuropsychologin & Psychotherapeutin in Ausbildung",
-            desc: "Neuropsychiatrie VAMED Klinik Hattingen, Deutschland"
-          },
-          {
-            year: "2017\u20132020",
-            title: "Ausbildung zur psych. Psychotherapeutin",
-            desc: "Akademie f\xFCr Verhaltenstherapie K\xF6ln, Deutschland"
-          },
-          {
-            year: "2018\u20132021",
-            title: "Psychotherapeutin Gerontopsychiatrie",
-            desc: "LVR Klinik D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2019",
-            title: "Publikation Therapieansatz",
-            desc: 'Ver\xF6ffentlichung des "cc-Konzepts" \u2013 Integratives Therapiekonzept bei Ged\xE4chtnisverlust und neurokognitiven St\xF6rungen (Hogrefe Verlag)'
-          },
-          {
-            year: "2020\u20132024",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Gemeinschaftspraxis Wendenburg & Kollegen, D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2024\u20132025",
-            title: "Psychotherapeutin",
-            desc: "Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden, Schweiz"
-          },
-          {
-            year: "2025",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Eigene Praxis in Basel, Schweiz"
-          }
-        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
-        ] }, idx))
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Ausbildung & Weiterbildung" }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2018" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Abschluss des Psychologiestudiums an der Universit\xE4t Basel" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2022" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Abschluss der postgradualen Ausbildung zur Psychotherapeutin in kognitiver Verhaltenstherapie (PSP Basel), Master of Advanced Studies in Psychotherapie (MAS)" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2023\u20132024" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Zus\xE4tzliche Weiterbildungen in Schematherapie (2023/2024) und Akzeptanz- und Commitment-Therapie (2023)" })
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Beruflicher Werdegang" }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2023 \u2013 31.05.2025" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Eidg. anerkannte Psychotherapeutin im Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "15.02.2021 \u2013 31.12.2022" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Psychologin in der Tagesklinik und im Ambulatorium Sonnenbrugg in Reinach BL, Klinik Sonnenhalde" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2019 \u2013 14.02.2021" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Assistenzpsychologin in der Klinik Sonnenhalde, Riehen" })
+        ] })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "ann-kathrin.scholz@psychologie.ch" })
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "stefanie.mujic@psychologie.ch" })
   ] });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Ann-Kathrin Scholz"
+  title: "M.Sc. Stefanie Mujic"
 };
 export {
   Page_default as default

@@ -19968,7 +19968,7 @@ var init_ContactForm = __esm({
       const [email, setEmail] = (0, import_react5.useState)("");
       const [address, setAddress] = (0, import_react5.useState)("");
       const [message, setMessage] = (0, import_react5.useState)("");
-      const isFormValid = firstName.trim() && lastName.trim() && birthdate.trim() && email.trim() && message.trim();
+      const isFormValid = firstName.trim() && firstName.trim().length > 1 && lastName.trim() && lastName.trim().length > 1 && birthdate.trim() && birthdate.trim().length > 1 && email.trim() && email.trim().length > 1 && message.trim() && message.trim().length > 1;
       const mailtoLink = isFormValid ? `mailto:${recipientEmail}?subject=${encodeURIComponent(`Kontaktanfrage von ${firstName} ${lastName}`)}&body=${encodeURIComponent(
         `Vorname: ${firstName}
 Nachname: ${lastName}
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/Page.tsx
+// src/konditionen/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,118 +20185,48 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/components/Card.tsx
+// src/konditionen/Page.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
-var Card = ({ padding = 6, children, className = "" }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
-};
-
-// src/components/CardContainer.tsx
-var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
-var CardContainer = ({ children, className = "" }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "flex flex-col gap-6 md:block h-full " + className, children });
-};
-
-// src/Page.tsx
-var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(WelcomeSection, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery2, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(InsuranceInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
   ] });
 };
-var WelcomeSection = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
-    "section",
-    {
-      className: "relative flex items-end justify-center text-center flex-col gap-6 h-screen overflow-hidden bg-fixed bg-center bg-cover",
-      style: { backgroundImage: "url('/public/img/bg-1.png')" },
-      children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { class: "absolute inset-0 bg-[#fff8e9bf] bg-opacity-20 z-10" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10  md:top-[20%] md:left-[10%] text-3xl  md:text-6xl rounded-none md:rounded-3xl", children: "Praxiser\xF6ffnung am 01.07.2025" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Card, { className: "z-10  md:top-[65%] md:left-[10%] w-full  md:w-[80%] rounded-none md:rounded-3xl", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { className: "mb-4 text-2xl font-bold  ", children: "Herzlich willkommen!" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl", children: " Wir freuen uns, Sie in unserer psychotherapeutischen Praxis im Herzen von Basel begr\xFCssen zu d\xFCrfen" })
-        ] })
-      ]
-    }
-  );
-};
-var Gallery = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[10%] md:left-[10%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Angebot" }),
-      " richtet sich an Erwachsene und umfasst Psychotherapie im Einzelsetting, Angeh\xF6rigengespr\xE4che sowie Paartherapie, individuell auf Sie abgestimmt."
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-      Card,
-      {
-        padding: 0,
-        className: "z-0 w-full h-[50%] p-0 bg-transparent shadow-none md:top-[50%] md:left-[50%] md:w-[40%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
-        children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-          "img",
+var InsuranceInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-8 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-3xl font-bold mb-4", children: "Psychotherapie \xFCber die Grundversicherung" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Mit einer \xE4rztlichen Anordnung ist eine Abrechnung \xFCber die Grundversicherung Ihrer Krankenkasse m\xF6glich. Daf\xFCr stellt Ihre behandelnde \xC4rztin oder Ihr behandelnder Arzt eine Anordnung f\xFCr 15 psychotherapeutische Sitzungen aus, die Sie direkt ausgeh\xE4ndigt bekommen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Besteht nach Ablauf der ersten 15 Sitzungen weiterhin Bedarf, kann eine zweite Anordnung f\xFCr weitere 15 Sitzungen erfolgen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Ab der 30. Sitzung ist f\xFCr die Fortsetzung der Psychotherapie eine Kostengutsprache bei der Krankenkasse zu beantragen. Der Antrag muss von der anordnenden \xC4rztin bzw. dem anordnenden Arzt gestellt werden und eine Fallbeurteilung durch eine Psychiaterin oder einen Psychiater enthalten." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("p", { children: [
+        "Das ben\xF6tigte Anordnungsformular finden Sie hier:",
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("br", {}),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+          "a",
           {
-            src: "/public/img/2.png",
-            alt: "Praxis Bild",
-            className: "w-full h-full object-cover rounded-3xl"
+            href: "/public/Anordnungsformular.pdf",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "underline hover:text-[var(--color-accent)] transition-colors",
+            children: "Anordnungsformular"
           }
         )
-      }
-    ),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "w-full pt-4 px-4 pb-6 md:w-[30%] md:bottom-[10%] md:right-[10%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: "In einem vertrauensvollen und gesch\xFCtzten Rahmen begleiten und unterst\xFCtzen wir Sie professionell bei der Bew\xE4ltigung psychischer Belastungen und in herausfordernden Lebenssituationen." }) })
-  ] }) }) });
-};
-var Gallery2 = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: [
-    " ",
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: [
-      " ",
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
-        " ",
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-          Card,
-          {
-            padding: 0,
-            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[18%] md:left-[70%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
-            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-              "img",
-              {
-                src: "/public/img/1.png",
-                alt: "Praxis Bild",
-                className: "w-full h-full object-cover rounded-3xl"
-              }
-            )
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-          Card,
-          {
-            padding: 0,
-            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[60%] md:left-[60%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
-            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-              "img",
-              {
-                src: "/public/img/3.png",
-                alt: "Praxis Bild",
-                className: "w-full h-full object-cover rounded-3xl"
-              }
-            )
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[5%] md:left-[20%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Team" }),
-          " besteht aus drei Fachpsychologinnen f\xFCr Psychotherapie sowie einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Wir arbeiten mit Methoden aus der kognitiv verhaltenstherapeutischen sowie systemischen Psychotherapie."
-        ] }) })
-      ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Bitte bringen Sie die unterzeichnete Anordnung zum ersten Gespr\xE4chstermin mit." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "font-bold mb-2", children: "Termine" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Termine k\xF6nnen bis 24 Stunden vor dem vereinbarten Termin kostenlos abgesagt werden. Bei kurzfristigen Absagen unter 24h werden Ihnen 120 CHF in Rechnung gestellt." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Bei Nichterscheinen ohne vorherige Absage wird Ihnen der gesamte Betrag in Rechnung gestellt." })
     ] })
-  ] });
+  ] }) });
 };
 var Page_default = {
   main: Page,
-  title: "Psychotherapie Basel - Angebot"
+  title: "Psychotherapie Basel - Grundversicherung"
 };
 export {
   Page_default as default

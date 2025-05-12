@@ -19968,7 +19968,7 @@ var init_ContactForm = __esm({
       const [email, setEmail] = (0, import_react5.useState)("");
       const [address, setAddress] = (0, import_react5.useState)("");
       const [message, setMessage] = (0, import_react5.useState)("");
-      const isFormValid = firstName.trim() && lastName.trim() && birthdate.trim() && email.trim() && message.trim();
+      const isFormValid = firstName.trim() && firstName.trim().length > 1 && lastName.trim() && lastName.trim().length > 1 && birthdate.trim() && birthdate.trim().length > 1 && email.trim() && email.trim().length > 1 && message.trim() && message.trim().length > 1;
       const mailtoLink = isFormValid ? `mailto:${recipientEmail}?subject=${encodeURIComponent(`Kontaktanfrage von ${firstName} ${lastName}`)}&body=${encodeURIComponent(
         `Vorname: ${firstName}
 Nachname: ${lastName}

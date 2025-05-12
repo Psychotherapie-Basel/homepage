@@ -19968,7 +19968,7 @@ var init_ContactForm = __esm({
       const [email, setEmail] = (0, import_react5.useState)("");
       const [address, setAddress] = (0, import_react5.useState)("");
       const [message, setMessage] = (0, import_react5.useState)("");
-      const isFormValid = firstName.trim() && lastName.trim() && birthdate.trim() && email.trim() && message.trim();
+      const isFormValid = firstName.trim() && firstName.trim().length > 1 && lastName.trim() && lastName.trim().length > 1 && birthdate.trim() && birthdate.trim().length > 1 && email.trim() && email.trim().length > 1 && message.trim() && message.trim().length > 1;
       const mailtoLink = isFormValid ? `mailto:${recipientEmail}?subject=${encodeURIComponent(`Kontaktanfrage von ${firstName} ${lastName}`)}&body=${encodeURIComponent(
         `Vorname: ${firstName}
 Nachname: ${lastName}
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/stefanie-mujic/Page.tsx
+// src/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,68 +20185,118 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/stefanie-mujic/Page.tsx
-init_ContactForm();
+// src/components/Card.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+var Card = ({ padding = 6, children, className = "" }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
+};
+
+// src/components/CardContainer.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+var CardContainer = ({ children, className = "" }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "flex flex-col gap-6 md:block h-full " + className, children });
+};
+
+// src/Page.tsx
+var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(WelcomeSection, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery2, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "img",
+var WelcomeSection = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
+    "section",
+    {
+      className: "relative flex items-end justify-center text-center flex-col gap-6 h-screen overflow-hidden bg-fixed bg-center bg-cover",
+      style: { backgroundImage: "url('/public/img/bg-1.png')" },
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { class: "absolute inset-0 bg-[#fff8e9bf] bg-opacity-20 z-10" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10  md:top-[20%] md:left-[10%] text-3xl  md:text-6xl rounded-none md:rounded-3xl", children: "Praxiser\xF6ffnung am 01.07.2025" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Card, { className: "z-10  md:top-[65%] md:left-[10%] w-full  md:w-[80%] rounded-none md:rounded-3xl", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { className: "mb-4 text-2xl font-bold  ", children: "Herzlich willkommen!" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl", children: " Wir freuen uns, Sie in unserer psychotherapeutischen Praxis im Herzen von Basel begr\xFCssen zu d\xFCrfen" })
+        ] })
+      ]
+    }
+  );
+};
+var Gallery = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[10%] md:left-[10%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Angebot" }),
+      " richtet sich an Erwachsene und umfasst Psychotherapie im Einzelsetting, Angeh\xF6rigengespr\xE4che sowie Paartherapie, individuell auf Sie abgestimmt."
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+      Card,
       {
-        src: "/public/img/stefanie-mujic.jpg",
-        alt: "M.Sc. Stefanie Mujic",
-        className: "w-full h-full rounded-full object-cover"
+        padding: 0,
+        className: "z-0 w-full h-[50%] p-0 bg-transparent shadow-none md:top-[50%] md:left-[50%] md:w-[40%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+        children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+          "img",
+          {
+            src: "/public/img/2.png",
+            alt: "Praxis Bild",
+            className: "w-full h-full object-cover rounded-3xl"
+          }
+        )
       }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Stefanie Mujic" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Als Psychotherapeutin ist mir eine vertrauensvolle therapeutische Beziehung besonders wichtig \u2013 denn sie bildet die Grundlage f\xFCr jede wirksame Psychotherapie. Ich begegne meinen Patient*innen auf Augenh\xF6he, mit Offenheit, Empathie und Wertsch\xE4tzung. Als kognitive Verhaltenstherapeutin arbeite ich ressourcen-, l\xF6sungs- und zielorientiert und unterst\xFCtze meine Patient*innen in ihrer Selbstwirksamkeit." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Ausbildung & Weiterbildung" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2018" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Abschluss des Psychologiestudiums an der Universit\xE4t Basel" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2022" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Abschluss der postgradualen Ausbildung zur Psychotherapeutin in kognitiver Verhaltenstherapie (PSP Basel), Master of Advanced Studies in Psychotherapie (MAS)" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2023\u20132024" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Zus\xE4tzliche Weiterbildungen in Schematherapie (2023/2024) und Akzeptanz- und Commitment-Therapie (2023)" })
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Beruflicher Werdegang" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2023 \u2013 31.05.2025" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Eidg. anerkannte Psychotherapeutin im Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "15.02.2021 \u2013 31.12.2022" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Psychologin in der Tagesklinik und im Ambulatorium Sonnenbrugg in Reinach BL, Klinik Sonnenhalde" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2019 \u2013 14.02.2021" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: "Assistenzpsychologin in der Klinik Sonnenhalde, Riehen" })
-        ] })
+    ),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "w-full pt-4 px-4 pb-6 md:w-[30%] md:bottom-[10%] md:right-[10%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: "In einem vertrauensvollen und gesch\xFCtzten Rahmen begleiten und unterst\xFCtzen wir Sie professionell bei der Bew\xE4ltigung psychischer Belastungen und in herausfordernden Lebenssituationen." }) })
+  ] }) }) });
+};
+var Gallery2 = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: [
+    " ",
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: [
+      " ",
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
+        " ",
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+          Card,
+          {
+            padding: 0,
+            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[18%] md:left-[70%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+              "img",
+              {
+                src: "/public/img/1.png",
+                alt: "Praxis Bild",
+                className: "w-full h-full object-cover rounded-3xl"
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+          Card,
+          {
+            padding: 0,
+            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[60%] md:left-[60%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+              "img",
+              {
+                src: "/public/img/3.png",
+                alt: "Praxis Bild",
+                className: "w-full h-full object-cover rounded-3xl"
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[5%] md:left-[20%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Team" }),
+          " besteht aus drei Fachpsychologinnen f\xFCr Psychotherapie sowie einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Wir arbeiten mit Methoden aus der kognitiv verhaltenstherapeutischen sowie systemischen Psychotherapie."
+        ] }) })
       ] })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "stefanie.mujic@psychologie.ch" })
+    ] })
   ] });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Stefanie Mujic"
+  title: "Psychotherapie Basel - Angebot"
 };
 export {
   Page_default as default

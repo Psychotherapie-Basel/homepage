@@ -19968,7 +19968,7 @@ var init_ContactForm = __esm({
       const [email, setEmail] = (0, import_react5.useState)("");
       const [address, setAddress] = (0, import_react5.useState)("");
       const [message, setMessage] = (0, import_react5.useState)("");
-      const isFormValid = firstName.trim() && lastName.trim() && birthdate.trim() && email.trim() && message.trim();
+      const isFormValid = firstName.trim() && firstName.trim().length > 1 && lastName.trim() && lastName.trim().length > 1 && birthdate.trim() && birthdate.trim().length > 1 && email.trim() && email.trim().length > 1 && message.trim() && message.trim().length > 1;
       const mailtoLink = isFormValid ? `mailto:${recipientEmail}?subject=${encodeURIComponent(`Kontaktanfrage von ${firstName} ${lastName}`)}&body=${encodeURIComponent(
         `Vorname: ${firstName}
 Nachname: ${lastName}
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/konditionen/Page.tsx
+// src/team/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,51 +20185,71 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/konditionen/Page.tsx
+// src/team/Page.tsx
+init_TeamCard();
+
+// src/components/Card.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+var Card = ({ padding = 6, children, className = "" }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
+};
+
+// src/team/Page.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(InsuranceInfo, {}) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "w-full flex flex-col p-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-full mb-8 mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Card, { className: "static md:relative md:w-[50%] md:left-[25%]", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "font-thin text-2xl", children: "Wir sind ein Team aus drei Fachpsychologinnen f\xFCr Psychotherapie und einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Um mit der gew\xFCnschten Person in Kontakt zu treten, f\xFCllen Sie bitte das Kontaktformular im entsprechenden Profil aus." }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Team, {})
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
   ] });
 };
-var InsuranceInfo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-8 text-gray-700 font-thin text-2xl", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-3xl font-bold mb-4", children: "Psychotherapie \xFCber die Grundversicherung" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Mit einer \xE4rztlichen Anordnung ist eine Abrechnung \xFCber die Grundversicherung Ihrer Krankenkasse m\xF6glich. Daf\xFCr stellt Ihre behandelnde \xC4rztin oder Ihr behandelnder Arzt eine Anordnung f\xFCr 15 psychotherapeutische Sitzungen aus, die Sie direkt ausgeh\xE4ndigt bekommen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Besteht nach Ablauf der ersten 15 Sitzungen weiterhin Bedarf, kann eine zweite Anordnung f\xFCr weitere 15 Sitzungen erfolgen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Ab der 30. Sitzung ist f\xFCr die Fortsetzung der Psychotherapie eine Kostengutsprache bei der Krankenkasse zu beantragen. Der Antrag muss von der anordnenden \xC4rztin bzw. dem anordnenden Arzt gestellt werden und eine Fallbeurteilung durch eine Psychiaterin oder einen Psychiater enthalten." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("p", { children: [
-        "Das ben\xF6tigte Anordnungsformular finden Sie hier:",
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("br", {}),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-          "a",
-          {
-            href: "/public/Anordnungsformular.pdf",
-            target: "_blank",
-            rel: "noopener noreferrer",
-            className: "underline hover:text-[var(--color-accent)] transition-colors",
-            children: "Anordnungsformular"
-          }
-        )
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Bitte bringen Sie die unterzeichnete Anordnung zum ersten Gespr\xE4chstermin mit." })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col gap-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "font-bold mb-2", children: "Termine" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Termine k\xF6nnen bis 24 Stunden vor dem vereinbarten Termin kostenlos abgesagt werden. Bei kurzfristigen Absagen unter 24h werden Ihnen 120 CHF in Rechnung gestellt." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Bei Nichterscheinen ohne vorherige Absage wird Ihnen der gesamte Betrag in Rechnung gestellt." })
-    ] })
-  ] }) });
+var teamMembers = [
+  // {
+  //   name: "Dr. med. Dipl. Psych. Annette Gnatzy",
+  //   title: "Fachärztin Psychiatrie und Psychotherapie",
+  //   description: "",
+  //   image: "/public/img/kim.png",
+  //   profileLink: "/team/annette-gnatzy",
+  //   formLink: "/team/annette-gnatzy/#kontaktformular",
+  // },
+  {
+    name: "M.Sc. Stefanie Mujic",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/stefanie-mujic.jpg",
+    formLink: "/team/stefanie-mujic#kontaktformular",
+    profileLink: "/team/stefanie-mujic"
+  },
+  {
+    name: "M.Sc. Ann-Kathrin Scholz",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/a.scholz.jpg",
+    profileLink: "/team/ann-kathrin-scholz",
+    formLink: "/team/ann-kathrin-scholz#kontaktformular"
+  },
+  {
+    name: "M.Sc. Kim Buchm\xFCller",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/kim.jpeg",
+    formLink: "/team/kim-buchmueller#kontaktformular",
+    profileLink: "/team/kim-buchmueller"
+  }
+];
+var Team = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("section", { className: "w-full flex justify-center p-6", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl w-full", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(TeamCard_default, { ...member }, index)) }) });
 };
 var Page_default = {
   main: Page,
-  title: "Psychotherapie Basel - Grundversicherung"
+  title: "Psychotherapie Basel - Team"
 };
 export {
-  Page_default as default
+  Page_default as default,
+  teamMembers
 };
 /*! Bundled license information:
 

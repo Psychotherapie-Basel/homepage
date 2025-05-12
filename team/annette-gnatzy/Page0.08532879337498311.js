@@ -19968,7 +19968,7 @@ var init_ContactForm = __esm({
       const [email, setEmail] = (0, import_react5.useState)("");
       const [address, setAddress] = (0, import_react5.useState)("");
       const [message, setMessage] = (0, import_react5.useState)("");
-      const isFormValid = firstName.trim() && lastName.trim() && birthdate.trim() && email.trim() && message.trim();
+      const isFormValid = firstName.trim() && firstName.trim().length > 1 && lastName.trim() && lastName.trim().length > 1 && birthdate.trim() && birthdate.trim().length > 1 && email.trim() && email.trim().length > 1 && message.trim() && message.trim().length > 1;
       const mailtoLink = isFormValid ? `mailto:${recipientEmail}?subject=${encodeURIComponent(`Kontaktanfrage von ${firstName} ${lastName}`)}&body=${encodeURIComponent(
         `Vorname: ${firstName}
 Nachname: ${lastName}
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/notfall/Page.tsx
+// src/team/annette-gnatzy/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,123 +20185,66 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/notfall/Page.tsx
+// src/team/annette-gnatzy/Page.tsx
+init_ContactForm();
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(EmergencyInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
   ] });
 };
-var EmergencyInfo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-6xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "text-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-4xl font-bold mb-4", children: "Notfall" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "leading-relaxed", children: "Falls Sie sich in einer akuten psychischen Krise befinden oder sofortige Hilfe ben\xF6tigen, wenden Sie sich bitte an eine der folgenden Notfallnummern:" })
+var Content = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl mt-4 text-[#e4c58a] font-bold", children: "Dr. med. Dipl.-Psych. Annette Gnatzy" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-[#e4c58a]", children: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Mein Schwerpunkt liegt in der Begleitung von Menschen mit depressiven Krisen, Burn-out, PTBS, komplexen Traumafolgest\xF6rungen, \xC4ngsten (allgemein, spezifisch) sowie Krebspatienten und deren Angeh\xF6rigen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich biete Supervision und Selbsterfahrung f\xFCr Psychotherapeuten und \xC4rzte an." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Weiterbildungen" }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
+          "Postgradualer Studiengang CAS Supervision (PSP Basel)",
+          "Postgradualer Studiengang CAS Selbsterfahrung (PSP Basel)",
+          "Weiterbildung psychosoziale Onkologie (WPO Freiburg)",
+          "CAS Health Care Management Psychiatrie, Psychotherapie und Klinische Psychologie (HWZ, Hochschule f\xFCr Wirtschaft Z\xFCrich)",
+          "Swiss Ensurance Medicine (SIM)",
+          "Kognitive Verhaltenstherapie",
+          "Systemische Therapie",
+          "EMDR"
+        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Studien" }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
+          "Psychologie (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)",
+          "Medizin (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)"
+        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Berufserfahrung" }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
+          "Leitende \xC4rztin Ambulatorium Rheinfelden, Klinik Sch\xFCtzen (CH)",
+          "Leitende \xC4rztin Ambulatorium Aarau, Klinik Barmelweid (CH)",
+          "Ober\xE4rztin Ambulatorium und Tagesklinik Reinach, Klinik Sonnenhalde (CH)",
+          "Praxist\xE4tigkeit Bonn (D)",
+          "Assistenz\xE4rztin, Universit\xE4tsklinik Bonn (D)",
+          "Neurologisches Fremdjahr, Universit\xE4tsklinik Bonn (D)",
+          "Assistenz\xE4rztin, Marienhospital Euskirchen (D)"
+        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Mitgliedschaften" }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: ["\xC4rztekammer Nordrhein", "FMH", "EMDIRA"].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+      ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-3xl font-bold mb-2", children: "Allgemeine Nummern" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Sanit\xE4tsnotruf",
-          number: "144",
-          logo: "/public/logos/sani.png",
-          description: "In lebensbedrohlichen Situationen immer direkt anrufen",
-          website: "https://www.bs.ch/jsd/rettung/unsere-organisation/sanitaet/rettungsdienst"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Medizinische Notrufzentrale",
-          number: "+41 61 261 15 15",
-          logo: "/public/logos/mnz.svg",
-          description: "Medizinische Notfallzentrale f\xFCr BS, BL und SO.",
-          website: "https://www.mnznotruf.ch/de/notrufzentrale.html"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Dargebotene Hand",
-          number: "143",
-          logo: "/public/logos/143.svg",
-          description: "Anonyme telefonische Beratung, 24h verf\xFCgbar",
-          website: "https://www.143.ch/"
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bs.png", className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Kriseninterventionsstation (KIS)",
-          number: "+41 61 325 51 00",
-          logo: "/public/logos/upk.svg",
-          address: "Wilhelm Klein-Strasse 27, 4002 Basel",
-          description: "Patientenaufnahme & Notfall Psychiatrie 24h f\xFCr Erwachsene",
-          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/zentrum-fuer-diagnostik-und-krisenintervention/kriseninterventionsstation"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Gesundheitszentrum Psychiatrie Basel",
-          number: "+41 61 325 81 81",
-          logo: "/public/logos/upk.svg",
-          address: "Kornhausgasse 7, 4051 Basel (Mo-Fr, 08:00\u201316:00)",
-          description: "Psychiatrische Hilfe werktags",
-          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/gesundheitszentrum-psychiatrie"
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bl.png", className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      EmergencyCard,
-      {
-        title: "Psychiatrie Baselland (PBL)",
-        number: "+41 61 553 56 56",
-        logo: "/public/logos/pbl.svg",
-        address: "Bienentalstrasse 7, 4410 Liestal",
-        description: "Zentrale Aufnahme, Notfallversorgung",
-        website: "https://www.pbl.ch/"
-      }
-    ) }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: " text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-2xl leading-relaxed  text-gray-600", children: "Bitte beachten Sie, dass wir in unserer Praxis keine Behandlung f\xFCr Personen mit Substanzgebrauch, akuter Suizidalit\xE4t oder psychotischen Symptomen anbieten k\xF6nnen. In diesen F\xE4llen empfehlen wir dringend, sich an eine psychiatrische Klinik oder eine spezialisierte Fachstelle zu wenden." }) })
-  ] }) });
-};
-var EmergencyCard = ({ title, number, description, address, logo, website }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "bg-white p-6 rounded-3xl shadow-md flex flex-col items-center text-center gap-4 hover:shadow-lg hover:scale-105 transition-all duration-300", children: [
-    logo && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-24 h-24", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { src: logo, alt: `${title} Logo`, className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "font-bold text-xl", children: title }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "a",
-      {
-        href: `tel:${number.replace(/\s+/g, "")}`,
-        className: "text-lg text-[var(--color-accent)] hover:underline break-words",
-        children: number
-      }
-    ),
-    website && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "a",
-      {
-        href: website,
-        target: "_blank",
-        rel: "noopener noreferrer",
-        className: "text-sm text-blue-500 hover:underline break-words",
-        children: "Website besuchen"
-      }
-    ),
-    description && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-xl text-gray-500", children: description }),
-    address && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm text-gray-500", children: address })
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "a@pycho.ch" })
   ] });
 };
 var Page_default = {
   main: Page,
-  title: "Notfall"
+  title: "Dr. med. Dipl. Psych. Annette Gnatzy"
 };
 export {
   Page_default as default
