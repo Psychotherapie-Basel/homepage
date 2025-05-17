@@ -19868,7 +19868,7 @@ var init_Header = __esm({
               {
                 href: l.path,
                 style: { fontWeight: l.active ? "bolder" : "normal" },
-                className: "text-[var(--color-text-light)] text-base font-medium no-underline hover:underline",
+                className: "text-[var(--color-text-light)] text-base font-thin no-underline hover:underline",
                 children: l.label
               }
             ) }, l.path);
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/notfall/Page.tsx
+// src/team/ann-kathrin-scholz/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,123 +20185,100 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/notfall/Page.tsx
+// src/team/ann-kathrin-scholz/Page.tsx
+init_ContactForm();
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(EmergencyInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
   ] });
 };
-var EmergencyInfo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-6xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "text-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-4xl font-bold mb-4", children: "Notfall" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "leading-relaxed", children: "Falls Sie sich in einer akuten psychischen Krise befinden oder sofortige Hilfe ben\xF6tigen, wenden Sie sich bitte an eine der folgenden Notfallnummern:" })
+var Content = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      "img",
+      {
+        src: "/public/img/a.scholz.jpg",
+        alt: "M.Sc. Ann-Kathrin Scholz",
+        className: "w-full h-full rounded-full object-cover"
+      }
+    ) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Ann-Kathrin Scholz" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Ich bin Verhaltenstherapeutin und biete Erwachsenen Einzel- sowie Paartherapie an." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich bin geb\xFCrtig aus dem Nordwesten Deutschlands und habe dort bis Ende 2023 gelebt und gearbeitet. Ich habe mich im Bereich der Neuropsychologie und der Psychotherapie aus- und weitergebildet und bin seit 2020 approbierte respektive anerkannte Psychotherapeutin. 2024 bin ich aus pers\xF6nlichen Gr\xFCnden in die Schweiz gezogen und freue mich nun, mich beruflich erneut in eigener Praxis niederzulassen und zu verwirklichen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Mein therapeutischer Fokus liegt auf dem Aufbau einer tragf\xE4higen therapeutischen Beziehung und der Arbeit in die Tiefe. Mir macht es Spass, gemeinsam mit meinen KlientInnen zu analysieren und individuelle Modelle zu erarbeiten, damit wir die vorliegende Belastungssituation und die Beschwerden gemeinsam m\xF6glichst gut verstehen k\xF6nnen. Auf Basis dieses Verst\xE4ndnisses k\xF6nnen wir dann zielgerichtet einzelne Themen und Anliegen bearbeiten. In meiner therapeutischen Arbeit kombiniere ich klassische verhaltenstherapeutische Methoden gerne mit Interventionen aus dem Bereich der Impact- und Schematherapie. Als Therapeutin sind mir Vertrauen, Wertfreiheit und Transparenz besonders wichtig. In diesem sicheren Raum unserer Therapie k\xF6nnen dann st\xFCtzende, hilfreiche wie zielf\xFChrende Therapieprozesse entstehen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "In der Paartherapie lege ich meinen Fokus auf die F\xF6rderung von Kommunikation und den Aufbau einer gesunden Konfliktkultur. Dabei geht es vor allem darum, gemeinsam die Paardynamik zu verstehen und die zugrundeliegenden Probleme aufzudecken und zu l\xF6sen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Pers\xF6nlicher Werdegang" }),
+        [
+          {
+            year: "2009\u20132012",
+            title: "Bachelor Studium Psychologie",
+            desc: "Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
+          },
+          {
+            year: "2012\u20132014",
+            title: "Master Studium Psychologie",
+            desc: "Schwerpunkt auf klinische Psychologie und Neurowissenschaften an der Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
+          },
+          {
+            year: "2014\u20132016",
+            title: "Neuropsychologin",
+            desc: "Ambulante Neuroreha Savita Neuss, Deutschland"
+          },
+          {
+            year: "2016\u20132018",
+            title: "Neuropsychologin & Psychotherapeutin in Ausbildung",
+            desc: "Neuropsychiatrie VAMED Klinik Hattingen, Deutschland"
+          },
+          {
+            year: "2017\u20132020",
+            title: "Ausbildung zur psych. Psychotherapeutin",
+            desc: "Akademie f\xFCr Verhaltenstherapie K\xF6ln, Deutschland"
+          },
+          {
+            year: "2018\u20132021",
+            title: "Psychotherapeutin Gerontopsychiatrie",
+            desc: "LVR Klinik D\xFCsseldorf, Deutschland"
+          },
+          {
+            year: "2019",
+            title: "Publikation Therapieansatz",
+            desc: 'Ver\xF6ffentlichung des "cc-Konzepts" \u2013 Integratives Therapiekonzept bei Ged\xE4chtnisverlust und neurokognitiven St\xF6rungen (Hogrefe Verlag)'
+          },
+          {
+            year: "2020\u20132024",
+            title: "Selbstst\xE4ndige Psychotherapeutin",
+            desc: "Gemeinschaftspraxis Wendenburg & Kollegen, D\xFCsseldorf, Deutschland"
+          },
+          {
+            year: "2024\u20132025",
+            title: "Psychotherapeutin",
+            desc: "Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden, Schweiz"
+          },
+          {
+            year: "2025",
+            title: "Selbstst\xE4ndige Psychotherapeutin",
+            desc: "Eigene Praxis in Basel, Schweiz"
+          }
+        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
+        ] }, idx))
+      ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-3xl font-bold mb-2", children: "Allgemeine Nummern" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Sanit\xE4tsnotruf",
-          number: "144",
-          logo: "/public/logos/sani.png",
-          description: "In lebensbedrohlichen Situationen immer direkt anrufen",
-          website: "https://www.bs.ch/jsd/rettung/unsere-organisation/sanitaet/rettungsdienst"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Medizinische Notrufzentrale",
-          number: "+41 61 261 15 15",
-          logo: "/public/logos/mnz.svg",
-          description: "Medizinische Notfallzentrale f\xFCr BS, BL und SO.",
-          website: "https://www.mnznotruf.ch/de/notrufzentrale.html"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Dargebotene Hand",
-          number: "143",
-          logo: "/public/logos/143.svg",
-          description: "Anonyme telefonische Beratung, 24h verf\xFCgbar",
-          website: "https://www.143.ch/"
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bs.png", className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Kriseninterventionsstation (KIS)",
-          number: "+41 61 325 51 00",
-          logo: "/public/logos/upk.svg",
-          address: "Wilhelm Klein-Strasse 27, 4002 Basel",
-          description: "Patientenaufnahme & Notfall Psychiatrie 24h f\xFCr Erwachsene",
-          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/zentrum-fuer-diagnostik-und-krisenintervention/kriseninterventionsstation"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Gesundheitszentrum Psychiatrie Basel",
-          number: "+41 61 325 81 81",
-          logo: "/public/logos/upk.svg",
-          address: "Kornhausgasse 7, 4051 Basel (Mo-Fr, 08:00\u201316:00)",
-          description: "Psychiatrische Hilfe werktags",
-          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/gesundheitszentrum-psychiatrie"
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bl.png", className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      EmergencyCard,
-      {
-        title: "Psychiatrie Baselland (PBL)",
-        number: "+41 61 553 56 56",
-        logo: "/public/logos/pbl.svg",
-        address: "Bienentalstrasse 7, 4410 Liestal",
-        description: "Zentrale Aufnahme, Notfallversorgung",
-        website: "https://www.pbl.ch/"
-      }
-    ) }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: " text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-2xl leading-relaxed  text-gray-600", children: "Bitte beachten Sie, dass wir in unserer Praxis keine Behandlung f\xFCr Personen mit Substanzgebrauch, akuter Suizidalit\xE4t oder psychotischen Symptomen anbieten k\xF6nnen. In diesen F\xE4llen empfehlen wir dringend, sich an eine psychiatrische Klinik oder eine spezialisierte Fachstelle zu wenden." }) })
-  ] }) });
-};
-var EmergencyCard = ({ title, number, description, address, logo, website }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "bg-white p-6 rounded-3xl shadow-md flex flex-col items-center text-center gap-4 hover:shadow-lg hover:scale-105 transition-all duration-300", children: [
-    logo && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-24 h-24", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { src: logo, alt: `${title} Logo`, className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "font-bold text-xl", children: title }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "a",
-      {
-        href: `tel:${number.replace(/\s+/g, "")}`,
-        className: "text-lg text-[var(--color-accent)] hover:underline break-words",
-        children: number
-      }
-    ),
-    website && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "a",
-      {
-        href: website,
-        target: "_blank",
-        rel: "noopener noreferrer",
-        className: "text-sm text-blue-500 hover:underline break-words",
-        children: "Website besuchen"
-      }
-    ),
-    description && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-xl text-gray-500", children: description }),
-    address && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm text-gray-500", children: address })
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "ann-kathrin.scholz@psychologie.ch" })
   ] });
 };
 var Page_default = {
   main: Page,
-  title: "Notfall"
+  title: "M.Sc. Ann-Kathrin Scholz"
 };
 export {
   Page_default as default

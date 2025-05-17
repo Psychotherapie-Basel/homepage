@@ -19868,7 +19868,7 @@ var init_Header = __esm({
               {
                 href: l.path,
                 style: { fontWeight: l.active ? "bolder" : "normal" },
-                className: "text-[var(--color-text-light)] text-base font-medium no-underline hover:underline",
+                className: "text-[var(--color-text-light)] text-base font-thin no-underline hover:underline",
                 children: l.label
               }
             ) }, l.path);
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/annette-gnatzy/Page.tsx
+// src/anfahrt/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,66 +20185,142 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/annette-gnatzy/Page.tsx
-init_ContactForm();
+// src/team/Page.tsx
+init_Header();
+init_TeamCard();
+
+// src/components/Card.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+
+// src/team/Page.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+var teamMembers = [
+  // {
+  //   name: "Dr. med. Dipl. Psych. Annette Gnatzy",
+  //   title: "Fachärztin Psychiatrie und Psychotherapie",
+  //   description: "",
+  //   image: "/public/img/kim.png",
+  //   profileLink: "/team/annette-gnatzy",
+  //   formLink: "/team/annette-gnatzy/#kontaktformular",
+  // },
+  {
+    name: "M.Sc. Stefanie Mujic-Urech",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/stefanie-Mujic-Urech.jpg",
+    formLink: "/team/stefanie-mujic-urech#kontaktformular",
+    profileLink: "/team/stefanie-mujic-urech"
+  },
+  {
+    name: "M.Sc. Ann-Kathrin Scholz",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/a.scholz.jpg",
+    profileLink: "/team/ann-kathrin-scholz",
+    formLink: "/team/ann-kathrin-scholz#kontaktformular"
+  },
+  {
+    name: "M.Sc. Kim Buchm\xFCller",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/kim.jpeg",
+    formLink: "/team/kim-buchmueller#kontaktformular",
+    profileLink: "/team/kim-buchmueller"
+  }
+];
+
+// src/anfahrt/Page.tsx
+var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(LocationInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl mt-4 text-[#e4c58a] font-bold", children: "Dr. med. Dipl.-Psych. Annette Gnatzy" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-[#e4c58a]", children: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Mein Schwerpunkt liegt in der Begleitung von Menschen mit depressiven Krisen, Burn-out, PTBS, komplexen Traumafolgest\xF6rungen, \xC4ngsten (allgemein, spezifisch) sowie Krebspatienten und deren Angeh\xF6rigen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich biete Supervision und Selbsterfahrung f\xFCr Psychotherapeuten und \xC4rzte an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Weiterbildungen" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Postgradualer Studiengang CAS Supervision (PSP Basel)",
-          "Postgradualer Studiengang CAS Selbsterfahrung (PSP Basel)",
-          "Weiterbildung psychosoziale Onkologie (WPO Freiburg)",
-          "CAS Health Care Management Psychiatrie, Psychotherapie und Klinische Psychologie (HWZ, Hochschule f\xFCr Wirtschaft Z\xFCrich)",
-          "Swiss Ensurance Medicine (SIM)",
-          "Kognitive Verhaltenstherapie",
-          "Systemische Therapie",
-          "EMDR"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+var LocationInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "flex-grow p-6 flex items-center mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Praxisstandort" }),
+      "Kanonengasse 19, 4051 Basel"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+      "iframe",
+      {
+        className: "w-full h-96 rounded-3xl",
+        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8949489897116!2d7.585945676385137!3d47.55004277117698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791bba315d1b5d3%3A0x91ba719e3d27a615!2sKanonengasse%2019%2C%204051%20Basel%2C%20Schweiz!5e0!3m2!1sde!2sch!4v1714233181173!5m2!1sde!2sch",
+        loading: "lazy",
+        referrerPolicy: "no-referrer-when-downgrade",
+        allowFullScreen: true
+      }
+    ) }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Wegbeschreibung" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-semibold", children: "Mit dem \xF6ffentlichen Verkehrsmittel" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("ul", { className: "list-none ", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("li", { children: [
+            "Bus 30 bis zur",
+            " ",
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+              "a",
+              {
+                href: "https://www.google.com/maps/search/?api=1&query=Haltestelle+Steinenschanze,4051+Basel",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "underline hover:text-[var(--color-accent)] transition-colors",
+                children: "Haltestelle Steinenschanze"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: "Diverse Tramlinien (3,6,8,11) bis Barf\xFCsserplatz oder Haltestelle Theater (6)" })
+        ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Studien" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Psychologie (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)",
-          "Medizin (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Berufserfahrung" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Leitende \xC4rztin Ambulatorium Rheinfelden, Klinik Sch\xFCtzen (CH)",
-          "Leitende \xC4rztin Ambulatorium Aarau, Klinik Barmelweid (CH)",
-          "Ober\xE4rztin Ambulatorium und Tagesklinik Reinach, Klinik Sonnenhalde (CH)",
-          "Praxist\xE4tigkeit Bonn (D)",
-          "Assistenz\xE4rztin, Universit\xE4tsklinik Bonn (D)",
-          "Neurologisches Fremdjahr, Universit\xE4tsklinik Bonn (D)",
-          "Assistenz\xE4rztin, Marienhospital Euskirchen (D)"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Mitgliedschaften" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { className: "mt-4 list-disc list-inside", children: ["\xC4rztekammer Nordrhein", "FMH", "EMDIRA"].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-semibold", children: "Mit dem Auto" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("ul", { className: "list-none", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+            "a",
+            {
+              href: "https://maps.app.goo.gl/8yYk76rPW9ckYupcA",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "underline hover:text-[var(--color-accent)] transition-colors",
+              children: "Parkhaus Steinen, Steinenschanze 5"
+            }
+          ),
+          ", 4051 Basel, Ausgang im 1. OG"
+        ] }) })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "a@pycho.ch" })
-  ] });
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-bold mb-2", children: "Kontaktaufnahme" }),
+      "Bitte melden Sie sich direkt bei der gew\xFCnschten Behandlerin \xFCber das Kontaktformular:"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
+      "a",
+      {
+        href: member.formLink,
+        className: "flex flex-row sm:flex-col items-center sm:items-center text-left sm:text-center gap-4 sm:gap-4 hover:text-[var(--color-accent)] transition-colors",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+            "img",
+            {
+              src: member.image,
+              alt: member.name,
+              className: "w-full h-full rounded-full object-cover"
+            }
+          ) }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-xl font-bold", children: member.name })
+        ]
+      },
+      index
+    )) })
+  ] }) });
 };
 var Page_default = {
   main: Page,
-  title: "Dr. med. Dipl. Psych. Annette Gnatzy"
+  title: "Psychotherapie Basel - Anfahrt"
 };
 export {
   Page_default as default

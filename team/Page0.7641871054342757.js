@@ -19868,7 +19868,7 @@ var init_Header = __esm({
               {
                 href: l.path,
                 style: { fontWeight: l.active ? "bolder" : "normal" },
-                className: "text-[var(--color-text-light)] text-base font-medium no-underline hover:underline",
+                className: "text-[var(--color-text-light)] text-base font-thin no-underline hover:underline",
                 children: l.label
               }
             ) }, l.path);
@@ -20190,8 +20190,8 @@ init_TeamCard();
 
 // src/components/Card.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
-var Card = ({ padding = 6, children, className = "" }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
+var Card = ({ padding = 6, children, className = "", style }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { style, className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
 };
 
 // src/team/Page.tsx
@@ -20216,12 +20216,12 @@ var teamMembers = [
   //   formLink: "/team/annette-gnatzy/#kontaktformular",
   // },
   {
-    name: "M.Sc. Stefanie Mujic",
+    name: "M.Sc. Stefanie Mujic-Urech",
     title: "Eidg. anerkannte Psychotherapeutin",
     description: "Fachpsychologin f\xFCr Psychotherapie FSP",
-    image: "/public/img/stefanie-mujic.jpg",
-    formLink: "/team/stefanie-mujic#kontaktformular",
-    profileLink: "/team/stefanie-mujic"
+    image: "/public/img/stefanie-Mujic-Urech.jpg",
+    formLink: "/team/stefanie-mujic-urech#kontaktformular",
+    profileLink: "/team/stefanie-mujic-urech"
   },
   {
     name: "M.Sc. Ann-Kathrin Scholz",

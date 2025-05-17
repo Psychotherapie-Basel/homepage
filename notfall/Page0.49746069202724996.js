@@ -19868,7 +19868,7 @@ var init_Header = __esm({
               {
                 href: l.path,
                 style: { fontWeight: l.active ? "bolder" : "normal" },
-                className: "text-[var(--color-text-light)] text-base font-medium no-underline hover:underline",
+                className: "text-[var(--color-text-light)] text-base font-thin no-underline hover:underline",
                 children: l.label
               }
             ) }, l.path);
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/kim-buchmueller/Page.tsx
+// src/notfall/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,94 +20185,123 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/kim-buchmueller/Page.tsx
-init_ContactForm();
+// src/notfall/Page.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(EmergencyInfo, {}) }),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "img",
-      {
-        src: "/public/img/kim.jpeg",
-        alt: "M.Sc. Kim Buchm\xFCller",
-        className: "w-full h-full rounded-full object-cover"
-      }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Kim Buchm\xFCller" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "In meiner therapeutischen Arbeit ist es mir wichtig einen vertrauensvollen und sicheren Rahmen zu schaffen, in dem Ihre Anliegen mit Offenheit, Wertfreiheit und Neugier erkundet werden k\xF6nnen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich arbeite mit Methoden der systemischen Psychotherapie, wobei Klient*innen als Expert*innen ihrer selbst betrachtet werden. Gemeinsam entwickeln wir ein Verst\xE4ndnis f\xFCr Ihre Belastungen. Ich begleite Sie im Rahmen des therapeutischen Prozesses dabei, einen neuen Umgang mit Ihren Problemen zu finden sowie neue Perspektiven zu entwickeln und arbeite ressourcen-, prozess- und zielorientiert." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Eine von Wertsch\xE4tzung, Empathie und Respekt gepr\xE4gte Grundhaltung f\xFCr eine Begegnung auf Augenh\xF6he ist mir dabei besonders wichtig. Ich biete Einzeltherapie f\xFCr Erwachsene sowie Angeh\xF6rigengespr\xE4che an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Aus- und Weiterbildung" }),
-        [
-          {
-            year: "2019\u20132023",
-            title: "Ausbildung zur eidg. anerkannten Psychotherapeutin",
-            desc: "Institut f\xFCr systemische Entwicklung und Fortbildung (IEF), Z\xFCrich"
-          },
-          {
-            year: "2017\u20132019",
-            title: "Master of Science in Psychology",
-            desc: "Universit\xE4t Basel"
-          },
-          {
-            year: "2013\u20132017",
-            title: "Bachelor of Science in Psychology",
-            desc: "Universit\xE4t Basel"
-          }
-        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
-        ] }, idx))
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Beruflicher Werdegang" }),
-        [
-          {
-            year: "2022 \u2013 2025",
-            title: "Psychotherapeutin",
-            desc: "Tagesklinik und Ambulatorium Sonnenbrugg, Klinik Sonnenhalde, Reinach"
-          },
-          {
-            year: "2019 \u2013 2022",
-            title: "Psychologin, M.Sc.",
-            desc: "Suchthilfe Region Basel, Klinik ESTA: station\xE4re Entw\xF6hnungstherapie, Einzel- und Gruppentherapie"
-          },
-          {
-            year: "2017 \u2013 2019",
-            title: "Betreuung und Nachtdienst",
-            desc: "Suchthilfe Region Basel, Klinik ESTA"
-          },
-          {
-            year: "",
-            title: "Psychologie-Praktika",
-            desc: "Klinik SIGMA-Zentrum (DE), PDAG, Schule in Costa Rica"
-          }
-        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
-        ] }, idx))
-      ] })
+var EmergencyInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-6xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "text-center", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-4xl font-bold mb-4", children: "Notfall" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "leading-relaxed", children: "Falls Sie sich in einer akuten psychischen Krise befinden oder sofortige Hilfe ben\xF6tigen, wenden Sie sich bitte an eine der folgenden Notfallnummern:" })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "kim.buchmueller@psychologie.ch" }),
-    " "
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-3xl font-bold mb-2", children: "Allgemeine Telefonnummern" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Sanit\xE4tsnotruf",
+          number: "144",
+          logo: "/public/logos/sani.png",
+          description: "In lebensbedrohlichen Situationen immer direkt anrufen",
+          website: "https://www.bs.ch/jsd/rettung/unsere-organisation/sanitaet/rettungsdienst"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Medizinische Notrufzentrale",
+          number: "+41 61 261 15 15",
+          logo: "/public/logos/mnz.svg",
+          description: "Medizinische Notfallzentrale f\xFCr BS, BL und SO.",
+          website: "https://www.mnznotruf.ch/de/notrufzentrale.html"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Dargebotene Hand",
+          number: "143",
+          logo: "/public/logos/143.svg",
+          description: "Anonyme telefonische Beratung, 24h verf\xFCgbar",
+          website: "https://www.143.ch/"
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bs.png", className: "w-full h-full object-contain" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Kriseninterventionsstation (KIS)",
+          number: "+41 61 325 51 00",
+          logo: "/public/logos/upk.svg",
+          address: "Wilhelm Klein-Strasse 27, 4002 Basel",
+          description: "Patientenaufnahme & Notfall Psychiatrie 24h f\xFCr Erwachsene",
+          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/zentrum-fuer-diagnostik-und-krisenintervention/kriseninterventionsstation"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        EmergencyCard,
+        {
+          title: "Gesundheitszentrum Psychiatrie Basel",
+          number: "+41 61 325 81 81",
+          logo: "/public/logos/upk.svg",
+          address: "Kornhausgasse 7, 4051 Basel (Mo-Fr, 08:00\u201316:00)",
+          description: "Psychiatrische Hilfe werktags",
+          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/gesundheitszentrum-psychiatrie"
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bl.png", className: "w-full h-full object-contain" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      EmergencyCard,
+      {
+        title: "Psychiatrie Baselland (PBL)",
+        number: "+41 61 553 56 56",
+        logo: "/public/logos/pbl.svg",
+        address: "Bienentalstrasse 7, 4410 Liestal",
+        description: "Zentrale Aufnahme, Notfallversorgung",
+        website: "https://www.pbl.ch/"
+      }
+    ) }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: " text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-2xl leading-relaxed  text-gray-600", children: "Bitte beachten Sie, dass wir in unserer Praxis keine Behandlung f\xFCr Personen mit Substanzgebrauch, akuter Suizidalit\xE4t oder psychotischen Symptomen anbieten k\xF6nnen. In diesen F\xE4llen empfehlen wir dringend, sich an eine psychiatrische Klinik oder eine spezialisierte Fachstelle zu wenden." }) })
+  ] }) });
+};
+var EmergencyCard = ({ title, number, description, address, logo, website }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "bg-white p-6 rounded-3xl shadow-md flex flex-col items-center text-center gap-4 hover:shadow-lg hover:scale-105 transition-all duration-300", children: [
+    logo && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-24 h-24", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { src: logo, alt: `${title} Logo`, className: "w-full h-full object-contain" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "font-bold text-xl", children: title }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      "a",
+      {
+        href: `tel:${number.replace(/\s+/g, "")}`,
+        className: "text-lg text-[var(--color-accent)] hover:underline break-words",
+        children: number
+      }
+    ),
+    website && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      "a",
+      {
+        href: website,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "text-sm text-blue-500 hover:underline break-words",
+        children: "Website besuchen"
+      }
+    ),
+    description && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-xl text-gray-500", children: description }),
+    address && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm text-gray-500", children: address })
   ] });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Kim Buchm\xFCller"
+  title: "Notfall"
 };
 export {
   Page_default as default

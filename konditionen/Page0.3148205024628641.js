@@ -19868,7 +19868,7 @@ var init_Header = __esm({
               {
                 href: l.path,
                 style: { fontWeight: l.active ? "bolder" : "normal" },
-                className: "text-[var(--color-text-light)] text-base font-medium no-underline hover:underline",
+                className: "text-[var(--color-text-light)] text-base font-thin no-underline hover:underline",
                 children: l.label
               }
             ) }, l.path);
@@ -20163,7 +20163,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/ann-kathrin-scholz/Page.tsx
+// src/konditionen/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20185,100 +20185,52 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/ann-kathrin-scholz/Page.tsx
-init_ContactForm();
+// src/konditionen/Page.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Content, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(InsuranceInfo, {}) }),
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "img",
-      {
-        src: "/public/img/a.scholz.jpg",
-        alt: "M.Sc. Ann-Kathrin Scholz",
-        className: "w-full h-full rounded-full object-cover"
-      }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Ann-Kathrin Scholz" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-6 leading-relaxed", children: "Ich bin Verhaltenstherapeutin und biete Erwachsenen Einzel- sowie Paartherapie an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich bin geb\xFCrtig aus dem Nordwesten Deutschlands und habe dort bis Ende 2023 gelebt und gearbeitet. Ich habe mich im Bereich der Neuropsychologie und der Psychotherapie aus- und weitergebildet und bin seit 2020 approbierte respektive anerkannte Psychotherapeutin. 2024 bin ich aus pers\xF6nlichen Gr\xFCnden in die Schweiz gezogen und freue mich nun, mich beruflich erneut in eigener Praxis niederzulassen und zu verwirklichen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "Mein therapeutischer Fokus liegt auf dem Aufbau einer tragf\xE4higen therapeutischen Beziehung und der Arbeit in die Tiefe. Mir macht es Spass, gemeinsam mit meinen KlientInnen zu analysieren und individuelle Modelle zu erarbeiten, damit wir die vorliegende Belastungssituation und die Beschwerden gemeinsam m\xF6glichst gut verstehen k\xF6nnen. Auf Basis dieses Verst\xE4ndnisses k\xF6nnen wir dann zielgerichtet einzelne Themen und Anliegen bearbeiten. In meiner therapeutischen Arbeit kombiniere ich klassische verhaltenstherapeutische Methoden gerne mit Interventionen aus dem Bereich der Impact- und Schematherapie. Als Therapeutin sind mir Vertrauen, Wertfreiheit und Transparenz besonders wichtig. In diesem sicheren Raum unserer Therapie k\xF6nnen dann st\xFCtzende, hilfreiche wie zielf\xFChrende Therapieprozesse entstehen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "mt-4 leading-relaxed", children: "In der Paartherapie lege ich meinen Fokus auf die F\xF6rderung von Kommunikation und den Aufbau einer gesunden Konfliktkultur. Dabei geht es vor allem darum, gemeinsam die Paardynamik zu verstehen und die zugrundeliegenden Probleme aufzudecken und zu l\xF6sen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Pers\xF6nlicher Werdegang" }),
-        [
+var InsuranceInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-8 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-3xl font-bold mb-4", children: "Psychotherapie \xFCber die Grundversicherung" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Mit einer \xE4rztlichen Anordnung ist eine Abrechnung \xFCber die Grundversicherung Ihrer Krankenkasse m\xF6glich. Daf\xFCr stellt Ihre behandelnde \xC4rztin oder Ihr behandelnder Arzt eine Anordnung f\xFCr 15 psychotherapeutische Sitzungen aus, die Sie direkt ausgeh\xE4ndigt bekommen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Besteht nach Ablauf der ersten 15 Sitzungen weiterhin Bedarf, kann eine zweite Anordnung f\xFCr weitere 15 Sitzungen erfolgen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Ab der 30. Sitzung ist f\xFCr die Fortsetzung der Psychotherapie eine Kostengutsprache bei der Krankenkasse zu beantragen. Der Antrag muss von der anordnenden \xC4rztin bzw. dem anordnenden Arzt gestellt werden und eine Fallbeurteilung durch eine Psychiaterin oder einen Psychiater enthalten." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("p", { children: [
+        "Das ben\xF6tigte Anordnungsformular finden Sie hier:",
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("br", {}),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+          "a",
           {
-            year: "2009\u20132012",
-            title: "Bachelor Studium Psychologie",
-            desc: "Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2012\u20132014",
-            title: "Master Studium Psychologie",
-            desc: "Schwerpunkt auf klinische Psychologie und Neurowissenschaften an der Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2014\u20132016",
-            title: "Neuropsychologin",
-            desc: "Ambulante Neuroreha Savita Neuss, Deutschland"
-          },
-          {
-            year: "2016\u20132018",
-            title: "Neuropsychologin & Psychotherapeutin in Ausbildung",
-            desc: "Neuropsychiatrie VAMED Klinik Hattingen, Deutschland"
-          },
-          {
-            year: "2017\u20132020",
-            title: "Ausbildung zur psych. Psychotherapeutin",
-            desc: "Akademie f\xFCr Verhaltenstherapie K\xF6ln, Deutschland"
-          },
-          {
-            year: "2018\u20132021",
-            title: "Psychotherapeutin Gerontopsychiatrie",
-            desc: "LVR Klinik D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2019",
-            title: "Publikation Therapieansatz",
-            desc: 'Ver\xF6ffentlichung des "cc-Konzepts" \u2013 Integratives Therapiekonzept bei Ged\xE4chtnisverlust und neurokognitiven St\xF6rungen (Hogrefe Verlag)'
-          },
-          {
-            year: "2020\u20132024",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Gemeinschaftspraxis Wendenburg & Kollegen, D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2024\u20132025",
-            title: "Psychotherapeutin",
-            desc: "Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden, Schweiz"
-          },
-          {
-            year: "2025",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Eigene Praxis in Basel, Schweiz"
+            href: "/public/Anordnungsformular.pdf",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "underline hover:text-[var(--color-accent)] transition-colors",
+            children: "Anordnungsformular"
           }
-        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-base", children: entry.title }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: entry.desc })
-        ] }, idx))
-      ] })
+        )
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Bitte bringen Sie die unterzeichnete Anordnung zum ersten Gespr\xE4chstermin mit." })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "ann-kathrin.scholz@psychologie.ch" })
-  ] });
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "font-bold mb-2", children: "Psychotherapie auf Selbstzahlerbasis" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Die Kosten f\xFCr Paartherapie werden nicht von der Grundversicherung \xFCbernommen und m\xFCssen selbst getragen werden. Auch Einzeltherapie kann auf Wunsch selbst bezahlt werden \u2013 unabh\xE4ngig von einer \xE4rztlichen Anordnung." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "font-bold mb-2", children: "Termine" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Termine k\xF6nnen bis 24 Stunden vor dem vereinbarten Termin kostenlos abgesagt werden. Bei kurzfristigen Absagen unter 24h werden Ihnen 120 CHF in Rechnung gestellt." }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { children: "Bei Nichterscheinen ohne vorherige Absage wird Ihnen der gesamte Betrag in Rechnung gestellt." })
+    ] })
+  ] }) });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Ann-Kathrin Scholz"
+  title: "Psychotherapie Basel - Grundversicherung"
 };
 export {
   Page_default as default

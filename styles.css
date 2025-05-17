@@ -935,6 +935,11 @@
       left: 25%;
     }
   }
+  .md\:left-\[35\%\] {
+    @media (width >= 48rem) {
+      left: 35%;
+    }
+  }
   .md\:left-\[50\%\] {
     @media (width >= 48rem) {
       left: 50%;
@@ -978,6 +983,11 @@
   .md\:w-\[30\%\] {
     @media (width >= 48rem) {
       width: 30%;
+    }
+  }
+  .md\:w-\[35\%\] {
+    @media (width >= 48rem) {
+      width: 35%;
     }
   }
   .md\:w-\[40\%\] {
@@ -1446,6 +1456,7 @@
   --color-light: #fff8e9;
   --color-text-light: #000000d5;
   --color-text-dark: #000000;
+  --font-weight-thin: 200;
 }
 * {
   color: var(--color-text-dark);
