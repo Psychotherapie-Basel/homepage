@@ -20241,7 +20241,7 @@ var Content = () => {
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "stefanie.mujich@psychologie.ch" })
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(ContactForm_default, { recipientEmail: "stefanie.mujic@psychologie.ch" })
   ] });
 };
 var Page_default = {
