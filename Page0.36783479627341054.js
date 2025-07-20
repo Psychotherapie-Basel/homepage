@@ -20347,7 +20347,7 @@ var Gallery = () => {
       {
         style: { background: "#c0deac" },
         padding: 0,
-        className: "z-0 w-full h-[50%] p-0 bg-transparent shadow-none md:top-[50%] md:left-[50%] md:w-[40%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+        className: "z-0 w-full h-[60vh] md:h-[50%] p-0 bg-transparent shadow-none md:top-[50%] md:left-[50%] md:w-[40%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
         children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
           ImageSlideshow_default,
           {
@@ -20374,7 +20374,7 @@ var Gallery2 = () => {
           {
             style: { background: "#dcefd9" },
             padding: 0,
-            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[18%] md:left-[70%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            className: "z-0 w-full h-[50vh] md:h-[40%] p-0 bg-transparent shadow-none md:top-[18%] md:left-[70%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
             children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
               ImageSlideshow_default,
               {
@@ -20391,7 +20391,7 @@ var Gallery2 = () => {
           {
             padding: 0,
             style: { background: "#dcefd9" },
-            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[60%] md:left-[60%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            className: "z-0 w-full h-[50vh] md:h-[40%] p-0 bg-transparent shadow-none md:top-[60%] md:left-[60%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
             children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
               ImageSlideshow_default,
               {
