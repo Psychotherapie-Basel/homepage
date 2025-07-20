@@ -1479,7 +1479,7 @@ var require_react_dom_development = __commonJS({
         return dispatcher;
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var React4 = require_react(), Internals = {
+      var React5 = require_react(), Internals = {
         d: {
           f: noop,
           r: function() {
@@ -1497,7 +1497,7 @@ var require_react_dom_development = __commonJS({
         },
         p: 0,
         findDOMNode: null
-      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React4.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React5.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
       "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
         "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
       );
@@ -2953,7 +2953,7 @@ var require_react_dom_client_development = __commonJS({
         "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
       }
       function validateOptionProps(element, props) {
-        null == props.value && ("object" === typeof props.children && null !== props.children ? React4.Children.forEach(props.children, function(child) {
+        null == props.value && ("object" === typeof props.children && null !== props.children ? React5.Children.forEach(props.children, function(child) {
           null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
             "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
           ));
@@ -16423,13 +16423,13 @@ var require_react_dom_client_development = __commonJS({
         ));
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var Scheduler = require_scheduler(), React4 = require_react(), ReactDOM = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+      var Scheduler = require_scheduler(), React5 = require_react(), ReactDOM = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
       Symbol.for("react.scope");
       Symbol.for("react.debug_trace_mode");
       var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
       Symbol.for("react.legacy_hidden");
       Symbol.for("react.tracing_marker");
-      var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React4.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+      var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React5.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
       disabledLog.__reactDisabledLog = true;
       var prefix, suffix, reentry = false;
       var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19149,7 +19149,7 @@ var require_react_dom_client_development = __commonJS({
         }
       };
       (function() {
-        var isomorphicReactPackageVersion = React4.version;
+        var isomorphicReactPackageVersion = React5.version;
         if ("19.0.0" !== isomorphicReactPackageVersion)
           throw Error(
             'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -19711,9 +19711,9 @@ var require_react_jsx_runtime_development = __commonJS({
         info || (parentType = getComponentNameFromType(parentType)) && (info = "\n\nCheck the top-level render call using <" + parentType + ">.");
         return info;
       }
-      var React4 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+      var React5 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
       Symbol.for("react.provider");
-      var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React4.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+      var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React5.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
       disabledLog.__reactDisabledLog = true;
       var prefix, suffix, reentry = false;
       var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19753,7 +19753,7 @@ var init_ReactClientComponent = __esm({
     ReactClientComponent = ({ component: Component, props, type, className, style }) => {
       const componentName = Component.displayName || Component.name;
       if (typeof window === "undefined") {
-        console.log(props);
+        console.debug(props);
         return import_react.default.createElement(type || "div", {
           className,
           style,
@@ -19858,7 +19858,7 @@ var init_Header = __esm({
           }
         }
       }, []);
-      console.log("location", location);
+      console.debug("location", location);
       return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full bg-[var(--color-primary)] p-4 md:p-6 flex items-center justify-between z-50 h-20", children: [
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "250px", height: "150px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
@@ -20122,8 +20122,82 @@ ${message}`
   }
 });
 
+// src/components/ImageSlideshow.tsx
+var ImageSlideshow_exports = {};
+__export(ImageSlideshow_exports, {
+  default: () => ImageSlideshow_default
+});
+var import_react6, import_jsx_runtime6, ImageSlideshowComponent, ImageSlideshow, ImageSlideshow_default;
+var init_ImageSlideshow = __esm({
+  "src/components/ImageSlideshow.tsx"() {
+    "use strict";
+    import_react6 = __toESM(require_react(), 1);
+    init_ReactClientComponent();
+    import_jsx_runtime6 = __toESM(require_jsx_runtime(), 1);
+    ImageSlideshowComponent = ({
+      images,
+      className = "",
+      alt = "Slideshow image",
+      interval = 4e3
+    }) => {
+      const [currentImageIndex, setCurrentImageIndex] = (0, import_react6.useState)(0);
+      const goToNextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      };
+      (0, import_react6.useEffect)(() => {
+        if (images.length <= 1) return;
+        const timer = setInterval(() => {
+          setCurrentImageIndex(
+            (prevIndex) => (prevIndex + 1) % images.length
+          );
+        }, interval);
+        return () => clearInterval(timer);
+      }, [images.length, interval]);
+      if (images.length === 0) {
+        return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className, children: "No images available" });
+      }
+      return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
+        "div",
+        {
+          className: `relative overflow-hidden w-full h-full cursor-pointer ${className}`,
+          onClick: goToNextImage,
+          children: [
+            images.map((src, index) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+              "img",
+              {
+                src,
+                alt: `${alt} ${index + 1}`,
+                className: `absolute inset-0 w-full h-full object-cover rounded-3xl transition-opacity duration-[2000ms] ease-in-out ${index === currentImageIndex ? "opacity-100" : "opacity-0"}`
+              },
+              src
+            )),
+            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10", children: images.map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+              "button",
+              {
+                onClick: (e) => {
+                  e.stopPropagation();
+                  setCurrentImageIndex(index);
+                },
+                className: `w-2 h-2 rounded-full transition-all duration-500 ease-in-out ${index === currentImageIndex ? "bg-white bg-opacity-90 scale-125" : "bg-white bg-opacity-50 hover:bg-opacity-70 hover:scale-110"}`
+              },
+              index
+            )) })
+          ]
+        }
+      );
+    };
+    ImageSlideshowComponent.displayName = "ImageSlideshow";
+    ImageSlideshow = asRCC(ImageSlideshowComponent, {
+      type: "div",
+      className: "relative overflow-hidden w-full h-full",
+      style: {}
+    });
+    ImageSlideshow_default = ImageSlideshow;
+  }
+});
+
 // src/components/init.ts
-var import_react6 = __toESM(require_react(), 1);
+var import_react7 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 if (globalThis.window) {
   const hydrateClientComponents = async () => {
@@ -20140,19 +20214,20 @@ if (globalThis.window) {
           console.error(e);
         }
       }
-      console.log(props);
+      console.debug(props);
       try {
-        console.log(`Hydrating: ${componentName}`);
+        console.debug(`Hydrating: ${componentName}`);
         const map = {
           Counter: Promise.resolve().then(() => (init_Counter(), Counter_exports)),
           Header: Promise.resolve().then(() => (init_Header(), Header_exports)),
           TeamCard: Promise.resolve().then(() => (init_TeamCard(), TeamCard_exports)),
-          ContactForm: Promise.resolve().then(() => (init_ContactForm(), ContactForm_exports))
+          ContactForm: Promise.resolve().then(() => (init_ContactForm(), ContactForm_exports)),
+          ImageSlideshow: Promise.resolve().then(() => (init_ImageSlideshow(), ImageSlideshow_exports))
         };
-        console.log(await map[componentName]);
+        console.debug(await map[componentName]);
         const { default: Component } = await map[componentName];
         const root = (0, import_client.createRoot)(el);
-        root.render((0, import_react6.createElement)(Component, props));
+        root.render((0, import_react7.createElement)(Component, props));
         el.dataset.hydrated = "true";
       } catch (err) {
         console.error(`\u274C Failed to hydrate ${componentName}`, err);
@@ -20163,15 +20238,15 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/Page.tsx
+// src/team/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
-var import_jsx_runtime6 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Footer = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("footer", { className: "bg-[var(--color-primary)] text-[var(--color-text-light)] text-center py-6", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "max-w-4xl mx-auto", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-lg font-bold", children: "Psychotherapie Basel" }),
-    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-sm", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("footer", { className: "bg-[var(--color-primary)] text-[var(--color-text-light)] text-center py-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-4xl mx-auto", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-lg font-bold", children: "Psychotherapie Basel" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
       "a",
       {
         href: "https://www.google.com/maps/search/?api=1&query=Kanonengasse+19,4051+Basel",
@@ -20185,93 +20260,71 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
+// src/team/Page.tsx
+init_TeamCard();
+
 // src/components/Card.tsx
-var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
-var Card = ({ padding = 6, children, className = "", style }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { style, className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
-};
-
-// src/components/CardContainer.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
-var CardContainer = ({ children, className = "" }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "flex flex-col gap-6 md:block h-full " + className, children });
+var Card = ({ padding = 6, children, className = "", style }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { style, className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
 };
 
-// src/Page.tsx
+// src/team/Page.tsx
 var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
   return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(WelcomeSection, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Gallery2, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("section", { className: "w-full flex flex-col p-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "w-full mb-8 mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "static md:relative md:w-[50%] md:left-[25%]", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-thin text-2xl", children: "Wir sind ein Team aus drei Fachpsychologinnen f\xFCr Psychotherapie und einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Um mit der gew\xFCnschten Person in Kontakt zu treten, f\xFCllen Sie bitte das Kontaktformular im entsprechenden Profil aus." }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Team, {})
+    ] }),
     /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Footer_default, {})
   ] });
 };
-var WelcomeSection = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(
-    "section",
-    {
-      className: "relative flex items-end justify-center text-center flex-col gap-6 h-screen overflow-hidden bg-fixed bg-center bg-cover",
-      style: { backgroundImage: "url('/public/img/bg-1.png')" },
-      children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { class: "absolute inset-0 bg-[#fff8e9bf] bg-opacity-20 z-10" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10  md:top-[20%] md:left-[10%] text-3xl  md:text-6xl rounded-none md:rounded-3xl", children: "Praxiser\xF6ffnung am 01.07.2025" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Card, { className: "z-10  md:top-[65%] md:left-[10%] w-full  md:w-[80%] rounded-none md:rounded-3xl", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { className: "mb-4 text-2xl font-bold  ", children: "Herzlich willkommen!" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl", children: " Wir freuen uns, Sie in unserer psychotherapeutischen Praxis im Herzen von Basel begr\xFCssen zu d\xFCrfen" })
-        ] })
-      ]
-    }
-  );
-};
-var Gallery = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[10%] md:left-[10%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Angebot" }),
-      " richtet sich an Erwachsene und umfasst Psychotherapie im Einzelsetting, Angeh\xF6rigengespr\xE4che sowie Paartherapie, individuell auf Sie abgestimmt."
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-      Card,
-      {
-        style: { background: "#c0deac" },
-        padding: 0,
-        className: "z-0 w-full h-[50%] p-0 bg-transparent shadow-none md:top-[50%] md:left-[50%] md:w-[40%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
-        children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_jsx_runtime9.Fragment, {})
-      }
-    ),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "w-full pt-4 px-4 pb-6 md:w-[30%] md:bottom-[10%] md:right-[10%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: "In einem vertrauensvollen und gesch\xFCtzten Rahmen begleiten und unterst\xFCtzen wir Sie professionell bei der Bew\xE4ltigung psychischer Belastungen und in herausfordernden Lebenssituationen." }) })
-  ] }) }) });
-};
-var Gallery2 = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: [
-    " ",
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: [
-      " ",
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
-        " ",
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-          Card,
-          {
-            style: { background: "#dcefd9" },
-            padding: 0,
-            className: "z-0 w-full h-[40%] p-0 bg-transparent shadow-none md:top-[18%] md:left-[70%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2"
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[5%] md:left-[35%] md:w-[35%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { className: "font-bold", children: "Unser Team" }),
-          " besteht aus drei Fachpsychologinnen f\xFCr Psychotherapie sowie einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Wir arbeiten mit Methoden aus der kognitiv verhaltenstherapeutischen sowie systemischen Psychotherapie."
-        ] }) })
-      ] })
-    ] })
-  ] });
+var teamMembers = [
+  // {
+  //   name: "Dr. med. Dipl. Psych. Annette Gnatzy",
+  //   title: "Fachärztin Psychiatrie und Psychotherapie",
+  //   description: "",
+  //   image: "/public/img/kim.png",
+  //   profileLink: "/team/annette-gnatzy",
+  //   formLink: "/team/annette-gnatzy/#kontaktformular",
+  // },
+  {
+    name: "M.Sc. Stefanie Mujic-Urech",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/stefanie-Mujic-Urech.jpg",
+    formLink: "/team/stefanie-mujic-urech#kontaktformular",
+    profileLink: "/team/stefanie-mujic-urech"
+  },
+  {
+    name: "M.Sc. Ann-Kathrin Scholz",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/a.scholz.jpg",
+    profileLink: "/team/ann-kathrin-scholz",
+    formLink: "/team/ann-kathrin-scholz#kontaktformular"
+  },
+  {
+    name: "M.Sc. Kim Buchm\xFCller",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/kim.jpeg",
+    formLink: "/team/kim-buchmueller#kontaktformular",
+    profileLink: "/team/kim-buchmueller"
+  }
+];
+var Team = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "w-full flex justify-center p-6", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl w-full", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(TeamCard_default, { ...member }, index)) }) });
 };
 var Page_default = {
   main: Page,
-  title: "Psychotherapie Basel - Angebot"
+  title: "Psychotherapie Basel - Team"
 };
 export {
-  Page_default as default
+  Page_default as default,
+  teamMembers
 };
 /*! Bundled license information:
 

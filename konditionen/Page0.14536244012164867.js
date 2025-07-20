@@ -1479,7 +1479,7 @@ var require_react_dom_development = __commonJS({
         return dispatcher;
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var React4 = require_react(), Internals = {
+      var React5 = require_react(), Internals = {
         d: {
           f: noop,
           r: function() {
@@ -1497,7 +1497,7 @@ var require_react_dom_development = __commonJS({
         },
         p: 0,
         findDOMNode: null
-      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React4.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React5.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
       "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
         "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
       );
@@ -2953,7 +2953,7 @@ var require_react_dom_client_development = __commonJS({
         "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
       }
       function validateOptionProps(element, props) {
-        null == props.value && ("object" === typeof props.children && null !== props.children ? React4.Children.forEach(props.children, function(child) {
+        null == props.value && ("object" === typeof props.children && null !== props.children ? React5.Children.forEach(props.children, function(child) {
           null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
             "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
           ));
@@ -16423,13 +16423,13 @@ var require_react_dom_client_development = __commonJS({
         ));
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var Scheduler = require_scheduler(), React4 = require_react(), ReactDOM = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+      var Scheduler = require_scheduler(), React5 = require_react(), ReactDOM = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
       Symbol.for("react.scope");
       Symbol.for("react.debug_trace_mode");
       var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
       Symbol.for("react.legacy_hidden");
       Symbol.for("react.tracing_marker");
-      var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React4.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+      var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React5.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
       disabledLog.__reactDisabledLog = true;
       var prefix, suffix, reentry = false;
       var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19149,7 +19149,7 @@ var require_react_dom_client_development = __commonJS({
         }
       };
       (function() {
-        var isomorphicReactPackageVersion = React4.version;
+        var isomorphicReactPackageVersion = React5.version;
         if ("19.0.0" !== isomorphicReactPackageVersion)
           throw Error(
             'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -19711,9 +19711,9 @@ var require_react_jsx_runtime_development = __commonJS({
         info || (parentType = getComponentNameFromType(parentType)) && (info = "\n\nCheck the top-level render call using <" + parentType + ">.");
         return info;
       }
-      var React4 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+      var React5 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
       Symbol.for("react.provider");
-      var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React4.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+      var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React5.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
       disabledLog.__reactDisabledLog = true;
       var prefix, suffix, reentry = false;
       var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19753,7 +19753,7 @@ var init_ReactClientComponent = __esm({
     ReactClientComponent = ({ component: Component, props, type, className, style }) => {
       const componentName = Component.displayName || Component.name;
       if (typeof window === "undefined") {
-        console.log(props);
+        console.debug(props);
         return import_react.default.createElement(type || "div", {
           className,
           style,
@@ -19858,7 +19858,7 @@ var init_Header = __esm({
           }
         }
       }, []);
-      console.log("location", location);
+      console.debug("location", location);
       return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("header", { className: "fixed top-0 left-0 w-full bg-[var(--color-primary)] p-4 md:p-6 flex items-center justify-between z-50 h-20", children: [
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", className: "flex items-center text-[var(--color-accent)] no-underline", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("img", { style: { width: "250px", height: "150px" }, src: "/public/logo.png", alt: "Psychotherapie Basel Logo", className: "absolute" }) }),
@@ -20122,8 +20122,82 @@ ${message}`
   }
 });
 
+// src/components/ImageSlideshow.tsx
+var ImageSlideshow_exports = {};
+__export(ImageSlideshow_exports, {
+  default: () => ImageSlideshow_default
+});
+var import_react6, import_jsx_runtime6, ImageSlideshowComponent, ImageSlideshow, ImageSlideshow_default;
+var init_ImageSlideshow = __esm({
+  "src/components/ImageSlideshow.tsx"() {
+    "use strict";
+    import_react6 = __toESM(require_react(), 1);
+    init_ReactClientComponent();
+    import_jsx_runtime6 = __toESM(require_jsx_runtime(), 1);
+    ImageSlideshowComponent = ({
+      images,
+      className = "",
+      alt = "Slideshow image",
+      interval = 4e3
+    }) => {
+      const [currentImageIndex, setCurrentImageIndex] = (0, import_react6.useState)(0);
+      const goToNextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      };
+      (0, import_react6.useEffect)(() => {
+        if (images.length <= 1) return;
+        const timer = setInterval(() => {
+          setCurrentImageIndex(
+            (prevIndex) => (prevIndex + 1) % images.length
+          );
+        }, interval);
+        return () => clearInterval(timer);
+      }, [images.length, interval]);
+      if (images.length === 0) {
+        return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className, children: "No images available" });
+      }
+      return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
+        "div",
+        {
+          className: `relative overflow-hidden w-full h-full cursor-pointer ${className}`,
+          onClick: goToNextImage,
+          children: [
+            images.map((src, index) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+              "img",
+              {
+                src,
+                alt: `${alt} ${index + 1}`,
+                className: `absolute inset-0 w-full h-full object-cover rounded-3xl transition-opacity duration-[2000ms] ease-in-out ${index === currentImageIndex ? "opacity-100" : "opacity-0"}`
+              },
+              src
+            )),
+            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10", children: images.map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+              "button",
+              {
+                onClick: (e) => {
+                  e.stopPropagation();
+                  setCurrentImageIndex(index);
+                },
+                className: `w-2 h-2 rounded-full transition-all duration-500 ease-in-out ${index === currentImageIndex ? "bg-white bg-opacity-90 scale-125" : "bg-white bg-opacity-50 hover:bg-opacity-70 hover:scale-110"}`
+              },
+              index
+            )) })
+          ]
+        }
+      );
+    };
+    ImageSlideshowComponent.displayName = "ImageSlideshow";
+    ImageSlideshow = asRCC(ImageSlideshowComponent, {
+      type: "div",
+      className: "relative overflow-hidden w-full h-full",
+      style: {}
+    });
+    ImageSlideshow_default = ImageSlideshow;
+  }
+});
+
 // src/components/init.ts
-var import_react6 = __toESM(require_react(), 1);
+var import_react7 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 if (globalThis.window) {
   const hydrateClientComponents = async () => {
@@ -20140,19 +20214,20 @@ if (globalThis.window) {
           console.error(e);
         }
       }
-      console.log(props);
+      console.debug(props);
       try {
-        console.log(`Hydrating: ${componentName}`);
+        console.debug(`Hydrating: ${componentName}`);
         const map = {
           Counter: Promise.resolve().then(() => (init_Counter(), Counter_exports)),
           Header: Promise.resolve().then(() => (init_Header(), Header_exports)),
           TeamCard: Promise.resolve().then(() => (init_TeamCard(), TeamCard_exports)),
-          ContactForm: Promise.resolve().then(() => (init_ContactForm(), ContactForm_exports))
+          ContactForm: Promise.resolve().then(() => (init_ContactForm(), ContactForm_exports)),
+          ImageSlideshow: Promise.resolve().then(() => (init_ImageSlideshow(), ImageSlideshow_exports))
         };
-        console.log(await map[componentName]);
+        console.debug(await map[componentName]);
         const { default: Component } = await map[componentName];
         const root = (0, import_client.createRoot)(el);
-        root.render((0, import_react6.createElement)(Component, props));
+        root.render((0, import_react7.createElement)(Component, props));
         el.dataset.hydrated = "true";
       } catch (err) {
         console.error(`\u274C Failed to hydrate ${componentName}`, err);
@@ -20163,15 +20238,15 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/notfall/Page.tsx
+// src/konditionen/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
-var import_jsx_runtime6 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
 var Footer = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("footer", { className: "bg-[var(--color-primary)] text-[var(--color-text-light)] text-center py-6", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "max-w-4xl mx-auto", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-lg font-bold", children: "Psychotherapie Basel" }),
-    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-sm", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("footer", { className: "bg-[var(--color-primary)] text-[var(--color-text-light)] text-center py-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-4xl mx-auto", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-lg font-bold", children: "Psychotherapie Basel" }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
       "a",
       {
         href: "https://www.google.com/maps/search/?api=1&query=Kanonengasse+19,4051+Basel",
@@ -20185,123 +20260,52 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/notfall/Page.tsx
-var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1);
+// src/konditionen/Page.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(EmergencyInfo, {}) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("main", { className: "flex-grow flex flex-col mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(InsuranceInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
   ] });
 };
-var EmergencyInfo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "max-w-6xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "text-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-4xl font-bold mb-4", children: "Notfall" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "leading-relaxed", children: "Falls Sie sich in einer akuten psychischen Krise befinden oder sofortige Hilfe ben\xF6tigen, wenden Sie sich bitte an eine der folgenden Notfallnummern:" })
+var InsuranceInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-8 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { className: "text-3xl font-bold mb-4", children: "Psychotherapie \xFCber die Grundversicherung" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Mit einer \xE4rztlichen Anordnung ist eine Abrechnung \xFCber die Grundversicherung Ihrer Krankenkasse m\xF6glich. Daf\xFCr stellt Ihre behandelnde \xC4rztin oder Ihr behandelnder Arzt eine Anordnung f\xFCr 15 psychotherapeutische Sitzungen aus, die Sie direkt ausgeh\xE4ndigt bekommen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Besteht nach Ablauf der ersten 15 Sitzungen weiterhin Bedarf, kann eine zweite Anordnung f\xFCr weitere 15 Sitzungen erfolgen." }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Ab der 30. Sitzung ist f\xFCr die Fortsetzung der Psychotherapie eine Kostengutsprache bei der Krankenkasse zu beantragen. Der Antrag muss von der anordnenden \xC4rztin bzw. dem anordnenden Arzt gestellt werden und eine Fallbeurteilung durch eine Psychiaterin oder einen Psychiater enthalten." }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("p", { children: [
+        "Das ben\xF6tigte Anordnungsformular finden Sie hier:",
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("br", {}),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+          "a",
+          {
+            href: "/public/Anordnungsformular.pdf",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "underline hover:text-[var(--color-accent)] transition-colors",
+            children: "Anordnungsformular"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Bitte bringen Sie die unterzeichnete Anordnung zum ersten Gespr\xE4chstermin mit." })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-3xl font-bold mb-2", children: "Allgemeine Telefonnummern" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Sanit\xE4tsnotruf",
-          number: "144",
-          logo: "/public/logos/sani.png",
-          description: "In lebensbedrohlichen Situationen immer direkt anrufen",
-          website: "https://www.bs.ch/jsd/rettung/unsere-organisation/sanitaet/rettungsdienst"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Medizinische Notrufzentrale",
-          number: "+41 61 261 15 15",
-          logo: "/public/logos/mnz.svg",
-          description: "Medizinische Notfallzentrale f\xFCr BS, BL und SO.",
-          website: "https://www.mnznotruf.ch/de/notrufzentrale.html"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Dargebotene Hand",
-          number: "143",
-          logo: "/public/logos/143.svg",
-          description: "Anonyme telefonische Beratung, 24h verf\xFCgbar",
-          website: "https://www.143.ch/"
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bs.png", className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Kriseninterventionsstation (KIS)",
-          number: "+41 61 325 51 00",
-          logo: "/public/logos/upk.svg",
-          address: "Wilhelm Klein-Strasse 27, 4002 Basel",
-          description: "Patientenaufnahme & Notfall Psychiatrie 24h f\xFCr Erwachsene",
-          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/zentrum-fuer-diagnostik-und-krisenintervention/kriseninterventionsstation"
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-        EmergencyCard,
-        {
-          title: "Gesundheitszentrum Psychiatrie Basel",
-          number: "+41 61 325 81 81",
-          logo: "/public/logos/upk.svg",
-          address: "Kornhausgasse 7, 4051 Basel (Mo-Fr, 08:00\u201316:00)",
-          description: "Psychiatrische Hilfe werktags",
-          website: "https://www.upk.ch/ueber-uns/kliniken-zentren-und-abteilungen/klinik-fuer-erwachsene/gesundheitszentrum-psychiatrie"
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { style: { width: "12rem" }, src: "/public/logos/bl.png", className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      EmergencyCard,
-      {
-        title: "Psychiatrie Baselland (PBL)",
-        number: "+41 61 553 56 56",
-        logo: "/public/logos/pbl.svg",
-        address: "Bienentalstrasse 7, 4410 Liestal",
-        description: "Zentrale Aufnahme, Notfallversorgung",
-        website: "https://www.pbl.ch/"
-      }
-    ) }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: " text-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-2xl leading-relaxed  text-gray-600", children: "Bitte beachten Sie, dass wir in unserer Praxis keine Behandlung f\xFCr Personen mit Substanzgebrauch, akuter Suizidalit\xE4t oder psychotischen Symptomen anbieten k\xF6nnen. In diesen F\xE4llen empfehlen wir dringend, sich an eine psychiatrische Klinik oder eine spezialisierte Fachstelle zu wenden." }) })
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "font-bold mb-2", children: "Psychotherapie auf Selbstzahlerbasis" }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Die Kosten f\xFCr Paartherapie werden nicht von der Grundversicherung \xFCbernommen und m\xFCssen selbst getragen werden. Auch Einzeltherapie kann auf Wunsch selbst bezahlt werden \u2013 unabh\xE4ngig von einer \xE4rztlichen Anordnung." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "font-bold mb-2", children: "Termine" }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Termine k\xF6nnen bis 24 Stunden vor dem vereinbarten Termin kostenlos abgesagt werden. Bei kurzfristigen Absagen unter 24h werden Ihnen 120 CHF in Rechnung gestellt." }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Bei Nichterscheinen ohne vorherige Absage wird Ihnen der gesamte Betrag in Rechnung gestellt." })
+    ] })
   ] }) });
-};
-var EmergencyCard = ({ title, number, description, address, logo, website }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "bg-white p-6 rounded-3xl shadow-md flex flex-col items-center text-center gap-4 hover:shadow-lg hover:scale-105 transition-all duration-300", children: [
-    logo && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "w-24 h-24", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("img", { src: logo, alt: `${title} Logo`, className: "w-full h-full object-contain" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "font-bold text-xl", children: title }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "a",
-      {
-        href: `tel:${number.replace(/\s+/g, "")}`,
-        className: "text-lg text-[var(--color-accent)] hover:underline break-words",
-        children: number
-      }
-    ),
-    website && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-      "a",
-      {
-        href: website,
-        target: "_blank",
-        rel: "noopener noreferrer",
-        className: "text-sm text-blue-500 hover:underline break-words",
-        children: "Website besuchen"
-      }
-    ),
-    description && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-xl text-gray-500", children: description }),
-    address && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("p", { className: "text-sm text-gray-500", children: address })
-  ] });
 };
 var Page_default = {
   main: Page,
-  title: "Notfall"
+  title: "Psychotherapie Basel - Grundversicherung"
 };
 export {
   Page_default as default
