@@ -19923,7 +19923,10 @@ var init_TeamCard = __esm({
               "div",
               {
                 className: "absolute w-full h-full backface-hidden bg-cover bg-center rounded-lg flex flex-col justify-end",
-                style: { backgroundImage: `url(${image})` },
+                style: {
+                  backgroundImage: `url(${image})`,
+                  backgroundPosition: name.includes("Annette") ? "center 40%" : "center center"
+                },
                 children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "bg-white text-[var(--color-text-light)] p-2 text-lg font-bold text-center rounded-b-lg", children: name })
               }
             ),
@@ -20238,7 +20241,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/stefanie-mujic-urech/Page.tsx
+// src/team/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20260,71 +20263,71 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/stefanie-mujic-urech/Page.tsx
-init_ContactForm();
+// src/team/Page.tsx
+init_TeamCard();
+
+// src/components/Card.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+var Card = ({ padding = 6, children, className = "", style }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { style, className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
+};
+
+// src/team/Page.tsx
+var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Content, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("section", { className: "w-full flex flex-col p-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "w-full mb-8 mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Card, { className: "static md:relative md:w-[50%] md:left-[25%]", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "font-thin text-2xl", children: "Wir sind ein Team aus drei Fachpsychologinnen f\xFCr Psychotherapie und einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Um mit der gew\xFCnschten Person in Kontakt zu treten, f\xFCllen Sie bitte das Kontaktformular im entsprechenden Profil aus." }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Team, {})
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-      "img",
-      {
-        src: "/public/img/stefanie-Mujic-Urech.jpg",
-        alt: "M.Sc. Stefanie Mujic-Urech",
-        className: "w-full h-full rounded-full object-cover"
-      }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Stefanie Mujic-Urech" }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-6 leading-relaxed", children: "Als Psychotherapeutin ist mir eine vertrauensvolle therapeutische Beziehung besonders wichtig \u2013 denn sie bildet die Grundlage f\xFCr jede wirksame Psychotherapie. Ich begegne meinen Patient*innen auf Augenh\xF6he, mit Offenheit, Empathie und Wertsch\xE4tzung. Als kognitive Verhaltenstherapeutin arbeite ich ressourcen-, l\xF6sungs- und zielorientiert und unterst\xFCtze meine Patient*innen in ihrer Selbstwirksamkeit." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Ausbildung & Weiterbildung" }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2018" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Abschluss des Psychologiestudiums an der Universit\xE4t Basel" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2022" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Abschluss der postgradualen Ausbildung zur Psychotherapeutin in kognitiver Verhaltenstherapie (PSP Basel), Master of Advanced Studies in Psychotherapie (MAS)" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2023\u20132024" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Zus\xE4tzliche Weiterbildungen in Schematherapie (2023/2024) und Akzeptanz- und Commitment-Therapie (2023)" })
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Beruflicher Werdegang" }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2023 \u2013 31.05.2025" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Eidg. anerkannte Psychotherapeutin im Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "15.02.2021 \u2013 31.12.2022" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Psychologin in der Tagesklinik und im Ambulatorium Sonnenbrugg in Reinach BL, Klinik Sonnenhalde" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2019 \u2013 14.02.2021" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Assistenzpsychologin in der Klinik Sonnenhalde, Riehen" })
-        ] })
-      ] })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(ContactForm_default, { recipientEmail: "stefanie.mujic@psychologie.ch" })
-  ] });
+var teamMembers = [
+  {
+    name: "Dr. med. Dipl.-Psych. Annette Gnatzy",
+    title: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie",
+    description: "Spezialisiert auf depressive Krisen, Burn-out, PTBS, Traumafolgest\xF6rungen und \xC4ngste",
+    image: "/public/img/annette.jpeg",
+    profileLink: "/team/annette-gnatzy",
+    formLink: "/team/annette-gnatzy#kontaktformular"
+  },
+  {
+    name: "M.Sc. Stefanie Mujic-Urech",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/stefanie-Mujic-Urech.jpg",
+    formLink: "/team/stefanie-mujic-urech#kontaktformular",
+    profileLink: "/team/stefanie-mujic-urech"
+  },
+  {
+    name: "M.Sc. Ann-Kathrin Scholz",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/a.scholz.jpg",
+    profileLink: "/team/ann-kathrin-scholz",
+    formLink: "/team/ann-kathrin-scholz#kontaktformular"
+  },
+  {
+    name: "M.Sc. Kim Buchm\xFCller",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/kim.jpeg",
+    formLink: "/team/kim-buchmueller#kontaktformular",
+    profileLink: "/team/kim-buchmueller"
+  }
+];
+var Team = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("section", { className: "w-full flex justify-center p-6", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl w-full", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(TeamCard_default, { ...member }, index)) }) });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Stefanie Mujic-Urech"
+  title: "Psychotherapie Basel - Team"
 };
 export {
-  Page_default as default
+  Page_default as default,
+  teamMembers
 };
 /*! Bundled license information:
 

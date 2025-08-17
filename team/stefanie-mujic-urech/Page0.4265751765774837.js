@@ -19923,7 +19923,10 @@ var init_TeamCard = __esm({
               "div",
               {
                 className: "absolute w-full h-full backface-hidden bg-cover bg-center rounded-lg flex flex-col justify-end",
-                style: { backgroundImage: `url(${image})` },
+                style: {
+                  backgroundImage: `url(${image})`,
+                  backgroundPosition: name.includes("Annette") ? "center 40%" : "center center"
+                },
                 children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "bg-white text-[var(--color-text-light)] p-2 text-lg font-bold text-center rounded-b-lg", children: name })
               }
             ),
@@ -20238,7 +20241,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/konditionen/Page.tsx
+// src/team/stefanie-mujic-urech/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20260,52 +20263,68 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/konditionen/Page.tsx
+// src/team/stefanie-mujic-urech/Page.tsx
+init_ContactForm();
 var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("main", { className: "flex-grow flex flex-col mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(InsuranceInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Content, {}),
     /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
   ] });
 };
-var InsuranceInfo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("section", { className: "flex-grow p-6 flex items-center", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-8 text-gray-700 font-thin text-2xl", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { className: "text-3xl font-bold mb-4", children: "Psychotherapie \xFCber die Grundversicherung" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Mit einer \xE4rztlichen Anordnung ist eine Abrechnung \xFCber die Grundversicherung Ihrer Krankenkasse m\xF6glich. Daf\xFCr stellt Ihre behandelnde \xC4rztin oder Ihr behandelnder Arzt eine Anordnung f\xFCr 15 psychotherapeutische Sitzungen aus, die Sie direkt ausgeh\xE4ndigt bekommen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Besteht nach Ablauf der ersten 15 Sitzungen weiterhin Bedarf, kann eine zweite Anordnung f\xFCr weitere 15 Sitzungen erfolgen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Ab der 30. Sitzung ist f\xFCr die Fortsetzung der Psychotherapie eine Kostengutsprache bei der Krankenkasse zu beantragen. Der Antrag muss von der anordnenden \xC4rztin bzw. dem anordnenden Arzt gestellt werden und eine Fallbeurteilung durch eine Psychiaterin oder einen Psychiater enthalten." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("p", { children: [
-        "Das ben\xF6tigte Anordnungsformular finden Sie hier:",
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("br", {}),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-          "a",
-          {
-            href: "/public/Anordnungsformular.pdf",
-            target: "_blank",
-            rel: "noopener noreferrer",
-            className: "underline hover:text-[var(--color-accent)] transition-colors",
-            children: "Anordnungsformular"
-          }
-        )
+var Content = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+      "img",
+      {
+        src: "/public/img/stefanie-Mujic-Urech.jpg",
+        alt: "M.Sc. Stefanie Mujic-Urech",
+        className: "w-full h-full rounded-full object-cover"
+      }
+    ) }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Stefanie Mujic-Urech" }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-6 leading-relaxed", children: "Als Psychotherapeutin ist mir eine vertrauensvolle therapeutische Beziehung besonders wichtig \u2013 denn sie bildet die Grundlage f\xFCr jede wirksame Psychotherapie. Ich begegne meinen Patient*innen auf Augenh\xF6he, mit Offenheit, Empathie und Wertsch\xE4tzung. Als kognitive Verhaltenstherapeutin arbeite ich ressourcen-, l\xF6sungs- und zielorientiert und unterst\xFCtze meine Patient*innen in ihrer Selbstwirksamkeit." }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12 text-left", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Ausbildung & Weiterbildung" }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2018" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Abschluss des Psychologiestudiums an der Universit\xE4t Basel" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2022" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Abschluss der postgradualen Ausbildung zur Psychotherapeutin in kognitiver Verhaltenstherapie (PSP Basel), Master of Advanced Studies in Psychotherapie (MAS)" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "2023\u20132024" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Zus\xE4tzliche Weiterbildungen in Schematherapie (2023/2024) und Akzeptanz- und Commitment-Therapie (2023)" })
+        ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Bitte bringen Sie die unterzeichnete Anordnung zum ersten Gespr\xE4chstermin mit." })
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12 text-left", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Beruflicher Werdegang" }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2023 \u2013 31.05.2025" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Eidg. anerkannte Psychotherapeutin im Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "15.02.2021 \u2013 31.12.2022" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Psychologin in der Tagesklinik und im Ambulatorium Sonnenbrugg in Reinach BL, Klinik Sonnenhalde" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: "01.01.2019 \u2013 14.02.2021" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: "Assistenzpsychologin in der Klinik Sonnenhalde, Riehen" })
+        ] })
+      ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col gap-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "font-bold mb-2", children: "Psychotherapie auf Selbstzahlerbasis" }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Die Kosten f\xFCr Paartherapie werden nicht von der Grundversicherung \xFCbernommen und m\xFCssen selbst getragen werden. Auch Einzeltherapie kann auf Wunsch selbst bezahlt werden \u2013 unabh\xE4ngig von einer \xE4rztlichen Anordnung." })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex flex-col gap-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "font-bold mb-2", children: "Termine" }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Termine k\xF6nnen bis 24 Stunden vor dem vereinbarten Termin kostenlos abgesagt werden. Bei kurzfristigen Absagen unter 24h werden Ihnen 120 CHF in Rechnung gestellt." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: "Bei Nichterscheinen ohne vorherige Absage wird Ihnen der gesamte Betrag in Rechnung gestellt." })
-    ] })
-  ] }) });
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(ContactForm_default, { recipientEmail: "stefanie.mujic@psychologie.ch" })
+  ] });
 };
 var Page_default = {
   main: Page,
-  title: "Psychotherapie Basel - Grundversicherung"
+  title: "M.Sc. Stefanie Mujic-Urech"
 };
 export {
   Page_default as default

@@ -19923,7 +19923,10 @@ var init_TeamCard = __esm({
               "div",
               {
                 className: "absolute w-full h-full backface-hidden bg-cover bg-center rounded-lg flex flex-col justify-end",
-                style: { backgroundImage: `url(${image})` },
+                style: {
+                  backgroundImage: `url(${image})`,
+                  backgroundPosition: name.includes("Annette") ? "center 40%" : "center center"
+                },
                 children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "bg-white text-[var(--color-text-light)] p-2 text-lg font-bold text-center rounded-b-lg", children: name })
               }
             ),
@@ -20238,7 +20241,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/ann-kathrin-scholz/Page.tsx
+// src/anfahrt/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20260,100 +20263,142 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/ann-kathrin-scholz/Page.tsx
-init_ContactForm();
+// src/team/Page.tsx
+init_Header();
+init_TeamCard();
+
+// src/components/Card.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+
+// src/team/Page.tsx
+var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
+var teamMembers = [
+  {
+    name: "Dr. med. Dipl.-Psych. Annette Gnatzy",
+    title: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie",
+    description: "Spezialisiert auf depressive Krisen, Burn-out, PTBS, Traumafolgest\xF6rungen und \xC4ngste",
+    image: "/public/img/annette.jpeg",
+    profileLink: "/team/annette-gnatzy",
+    formLink: "/team/annette-gnatzy#kontaktformular"
+  },
+  {
+    name: "M.Sc. Stefanie Mujic-Urech",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/stefanie-Mujic-Urech.jpg",
+    formLink: "/team/stefanie-mujic-urech#kontaktformular",
+    profileLink: "/team/stefanie-mujic-urech"
+  },
+  {
+    name: "M.Sc. Ann-Kathrin Scholz",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/a.scholz.jpg",
+    profileLink: "/team/ann-kathrin-scholz",
+    formLink: "/team/ann-kathrin-scholz#kontaktformular"
+  },
+  {
+    name: "M.Sc. Kim Buchm\xFCller",
+    title: "Eidg. anerkannte Psychotherapeutin",
+    description: "Fachpsychologin f\xFCr Psychotherapie FSP",
+    image: "/public/img/kim.jpeg",
+    formLink: "/team/kim-buchmueller#kontaktformular",
+    profileLink: "/team/kim-buchmueller"
+  }
+];
+
+// src/anfahrt/Page.tsx
+var import_jsx_runtime10 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Content, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex flex-col min-h-screen", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("main", { className: "flex-grow flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(LocationInfo, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-      "img",
+var LocationInfo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("section", { className: "flex-grow p-6 flex items-center mt-16", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "max-w-4xl mx-auto w-full flex flex-col gap-12 text-gray-700 font-thin text-2xl", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "font-bold mb-2", children: "Praxisstandort" }),
+      "Kanonengasse 19, 4051 Basel"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+      "iframe",
       {
-        src: "/public/img/a.scholz.jpg",
-        alt: "M.Sc. Ann-Kathrin Scholz",
-        className: "w-full h-full rounded-full object-cover"
+        className: "w-full h-96 rounded-3xl",
+        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8949489897116!2d7.585945676385137!3d47.55004277117698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791bba315d1b5d3%3A0x91ba719e3d27a615!2sKanonengasse%2019%2C%204051%20Basel%2C%20Schweiz!5e0!3m2!1sde!2sch!4v1714233181173!5m2!1sde!2sch",
+        loading: "lazy",
+        referrerPolicy: "no-referrer-when-downgrade",
+        allowFullScreen: true
       }
     ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { className: "text-2xl text-center mt-4 text-[#e4c58a] font-bold", children: "M.Sc. Ann-Kathrin Scholz" }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-lg text-center text-[#e4c58a]", children: "Eidg. anerkannte Psychotherapeutin" }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-base text-center mt-1 text-[#e4c58a]", children: "Fachpsychologin f\xFCr Psychotherapie FSP" }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-6 leading-relaxed", children: "Ich bin Verhaltenstherapeutin und biete Erwachsenen Einzel- sowie Paartherapie an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich bin geb\xFCrtig aus dem Nordwesten Deutschlands und habe dort bis Ende 2023 gelebt und gearbeitet. Ich habe mich im Bereich der Neuropsychologie und der Psychotherapie aus- und weitergebildet und bin seit 2020 approbierte respektive anerkannte Psychotherapeutin. 2024 bin ich aus pers\xF6nlichen Gr\xFCnden in die Schweiz gezogen und freue mich nun, mich beruflich erneut in eigener Praxis niederzulassen und zu verwirklichen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-4 leading-relaxed", children: "Mein therapeutischer Fokus liegt auf dem Aufbau einer tragf\xE4higen therapeutischen Beziehung und der Arbeit in die Tiefe. Mir macht es Spass, gemeinsam mit meinen KlientInnen zu analysieren und individuelle Modelle zu erarbeiten, damit wir die vorliegende Belastungssituation und die Beschwerden gemeinsam m\xF6glichst gut verstehen k\xF6nnen. Auf Basis dieses Verst\xE4ndnisses k\xF6nnen wir dann zielgerichtet einzelne Themen und Anliegen bearbeiten. In meiner therapeutischen Arbeit kombiniere ich klassische verhaltenstherapeutische Methoden gerne mit Interventionen aus dem Bereich der Impact- und Schematherapie. Als Therapeutin sind mir Vertrauen, Wertfreiheit und Transparenz besonders wichtig. In diesem sicheren Raum unserer Therapie k\xF6nnen dann st\xFCtzende, hilfreiche wie zielf\xFChrende Therapieprozesse entstehen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-4 leading-relaxed", children: "In der Paartherapie lege ich meinen Fokus auf die F\xF6rderung von Kommunikation und den Aufbau einer gesunden Konfliktkultur. Dabei geht es vor allem darum, gemeinsam die Paardynamik zu verstehen und die zugrundeliegenden Probleme aufzudecken und zu l\xF6sen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12 text-left", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-center text-[#e4c58a] font-semibold", children: "Pers\xF6nlicher Werdegang" }),
-        [
-          {
-            year: "2009\u20132012",
-            title: "Bachelor Studium Psychologie",
-            desc: "Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2012\u20132014",
-            title: "Master Studium Psychologie",
-            desc: "Schwerpunkt auf klinische Psychologie und Neurowissenschaften an der Heinrich-Heine-Universit\xE4t D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2014\u20132016",
-            title: "Neuropsychologin",
-            desc: "Ambulante Neuroreha Savita Neuss, Deutschland"
-          },
-          {
-            year: "2016\u20132018",
-            title: "Neuropsychologin & Psychotherapeutin in Ausbildung",
-            desc: "Neuropsychiatrie VAMED Klinik Hattingen, Deutschland"
-          },
-          {
-            year: "2017\u20132020",
-            title: "Ausbildung zur psych. Psychotherapeutin",
-            desc: "Akademie f\xFCr Verhaltenstherapie K\xF6ln, Deutschland"
-          },
-          {
-            year: "2018\u20132021",
-            title: "Psychotherapeutin Gerontopsychiatrie",
-            desc: "LVR Klinik D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2019",
-            title: "Publikation Therapieansatz",
-            desc: 'Ver\xF6ffentlichung des "cc-Konzepts" \u2013 Integratives Therapiekonzept bei Ged\xE4chtnisverlust und neurokognitiven St\xF6rungen (Hogrefe Verlag)'
-          },
-          {
-            year: "2020\u20132024",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Gemeinschaftspraxis Wendenburg & Kollegen, D\xFCsseldorf, Deutschland"
-          },
-          {
-            year: "2024\u20132025",
-            title: "Psychotherapeutin",
-            desc: "Ambulatorium der Klinik Sch\xFCtzen, Rheinfelden, Schweiz"
-          },
-          {
-            year: "2025",
-            title: "Selbstst\xE4ndige Psychotherapeutin",
-            desc: "Eigene Praxis in Basel, Schweiz"
-          }
-        ].map((entry, idx) => /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "mt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h3", { className: "text-[#e4c58a] text-lg font-semibold", children: entry.year }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-base", children: entry.title }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "text-sm", children: entry.desc })
-        ] }, idx))
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex flex-col gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "font-bold mb-2", children: "Wegbeschreibung" }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "font-semibold", children: "Mit dem \xF6ffentlichen Verkehrsmittel" }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("ul", { className: "list-none ", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("li", { children: [
+            "Bus 30 bis zur",
+            " ",
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+              "a",
+              {
+                href: "https://www.google.com/maps/search/?api=1&query=Haltestelle+Steinenschanze,4051+Basel",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "underline hover:text-[var(--color-accent)] transition-colors",
+                children: "Haltestelle Steinenschanze"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("li", { children: "Diverse Tramlinien (3,6,8,11) bis Barf\xFCsserplatz oder Haltestelle Theater (6)" })
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "font-semibold", children: "Mit dem Auto" }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("ul", { className: "list-none", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+            "a",
+            {
+              href: "https://maps.app.goo.gl/8yYk76rPW9ckYupcA",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "underline hover:text-[var(--color-accent)] transition-colors",
+              children: "Parkhaus Steinen, Steinenschanze 5"
+            }
+          ),
+          ", 4051 Basel, Ausgang im 1. OG"
+        ] }) })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(ContactForm_default, { recipientEmail: "ann-kathrin.scholz@psychologie.ch" })
-  ] });
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "font-bold mb-2", children: "Kontaktaufnahme" }),
+      "Bitte melden Sie sich direkt bei der gew\xFCnschten Behandlerin \xFCber das Kontaktformular:"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-8", children: teamMembers.map((member, index) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
+      "a",
+      {
+        href: member.formLink,
+        className: "flex flex-row sm:flex-col items-center sm:items-center text-left sm:text-center gap-4 sm:gap-4 hover:text-[var(--color-accent)] transition-colors",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+            "img",
+            {
+              src: member.image,
+              alt: member.name,
+              className: "w-full h-full rounded-full object-cover"
+            }
+          ) }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "text-xl font-bold", children: member.name })
+        ]
+      },
+      index
+    )) })
+  ] }) });
 };
 var Page_default = {
   main: Page,
-  title: "M.Sc. Ann-Kathrin Scholz"
+  title: "Psychotherapie Basel - Anfahrt"
 };
 export {
   Page_default as default

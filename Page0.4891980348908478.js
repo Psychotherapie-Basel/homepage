@@ -19923,7 +19923,10 @@ var init_TeamCard = __esm({
               "div",
               {
                 className: "absolute w-full h-full backface-hidden bg-cover bg-center rounded-lg flex flex-col justify-end",
-                style: { backgroundImage: `url(${image})` },
+                style: {
+                  backgroundImage: `url(${image})`,
+                  backgroundPosition: name.includes("Annette") ? "center 40%" : "center center"
+                },
                 children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "bg-white text-[var(--color-text-light)] p-2 text-lg font-bold text-center rounded-b-lg", children: name })
               }
             ),
@@ -20238,7 +20241,7 @@ if (globalThis.window) {
   document.addEventListener("DOMContentLoaded", hydrateClientComponents);
 }
 
-// src/team/annette-gnatzy/Page.tsx
+// src/Page.tsx
 init_Header();
 
 // src/components/Footer.tsx
@@ -20260,66 +20263,160 @@ var Footer = () => {
 };
 var Footer_default = Footer;
 
-// src/team/annette-gnatzy/Page.tsx
-init_ContactForm();
+// src/components/Card.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+var Card = ({ padding = 6, children, className = "", style }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { style, className: `relative md:absolute bg-white p-${padding} rounded-3xl shadow-md overflow-hidden ${className}`, children });
+};
+
+// src/components/CardContainer.tsx
+var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
+var CardContainer = ({ children, className = "" }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "flex flex-col gap-6 md:block h-full " + className, children });
+};
+
+// src/Page.tsx
+init_ImageSlideshow();
+var import_jsx_runtime10 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Header_default, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Content, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Footer_default, {})
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Header_default, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(WelcomeSection, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Gallery, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Gallery2, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Footer_default, {})
   ] });
 };
-var Content = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-left text-[#fff8e9]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { className: "text-2xl mt-4 text-[#e4c58a] font-bold", children: "Dr. med. Dipl.-Psych. Annette Gnatzy" }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-lg text-[#e4c58a]", children: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie" }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-6 leading-relaxed", children: "Mein Schwerpunkt liegt in der Begleitung von Menschen mit depressiven Krisen, Burn-out, PTBS, komplexen Traumafolgest\xF6rungen, \xC4ngsten (allgemein, spezifisch) sowie Krebspatienten und deren Angeh\xF6rigen." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "mt-4 leading-relaxed", children: "Ich biete Supervision und Selbsterfahrung f\xFCr Psychotherapeuten und \xC4rzte an." }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Weiterbildungen" }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Postgradualer Studiengang CAS Supervision (PSP Basel)",
-          "Postgradualer Studiengang CAS Selbsterfahrung (PSP Basel)",
-          "Weiterbildung psychosoziale Onkologie (WPO Freiburg)",
-          "CAS Health Care Management Psychiatrie, Psychotherapie und Klinische Psychologie (HWZ, Hochschule f\xFCr Wirtschaft Z\xFCrich)",
-          "Swiss Ensurance Medicine (SIM)",
-          "Kognitive Verhaltenstherapie",
-          "Systemische Therapie",
-          "EMDR"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Studien" }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Psychologie (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)",
-          "Medizin (Rheinische Friedrich Wilhelm Universit\xE4t Bonn)"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Berufserfahrung" }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("ul", { className: "mt-4 list-disc list-inside", children: [
-          "Leitende \xC4rztin Ambulatorium Rheinfelden, Klinik Sch\xFCtzen (CH)",
-          "Leitende \xC4rztin Ambulatorium Aarau, Klinik Barmelweid (CH)",
-          "Ober\xE4rztin Ambulatorium und Tagesklinik Reinach, Klinik Sonnenhalde (CH)",
-          "Praxist\xE4tigkeit Bonn (D)",
-          "Assistenz\xE4rztin, Universit\xE4tsklinik Bonn (D)",
-          "Neurologisches Fremdjahr, Universit\xE4tsklinik Bonn (D)",
-          "Assistenz\xE4rztin, Marienhospital Euskirchen (D)"
-        ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "mt-12", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-xl text-[#e4c58a] font-semibold", children: "Mitgliedschaften" }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("ul", { className: "mt-4 list-disc list-inside", children: ["\xC4rztekammer Nordrhein", "FMH", "EMDIRA"].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("li", { className: "mt-2 text-base leading-relaxed pl-4", children: item }, idx)) })
+var WelcomeSection = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
+    "section",
+    {
+      className: "relative flex items-end justify-center text-center flex-col gap-6 h-screen overflow-hidden bg-fixed bg-center bg-cover",
+      style: { backgroundImage: "url('/public/img/bg-1.png')" },
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "absolute inset-0 bg-[#fff8e9bf] bg-opacity-20 z-10" }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Card, { className: "z-10  md:top-[65%] md:left-[10%] w-full  md:w-[80%] rounded-none md:rounded-3xl", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h2", { className: "mb-4 text-2xl font-bold  ", children: "Herzlich willkommen!" }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-gray-700 font-thin text-2xl", children: " Wir freuen uns, Sie in unserer psychotherapeutischen Praxis im Herzen von Basel begr\xFCssen zu d\xFCrfen" })
+        ] })
+      ]
+    }
+  );
+};
+var roomImages = [
+  "/public/img/rooms/0-0.jpeg",
+  "/public/img/rooms/0-1.jpeg",
+  "/public/img/rooms/0-2.jpeg",
+  "/public/img/rooms/1-0.jpeg",
+  "/public/img/rooms/1-1.jpeg",
+  "/public/img/rooms/1-2.jpeg",
+  "/public/img/rooms/1-3.jpeg",
+  "/public/img/rooms/1-4.jpeg",
+  "/public/img/rooms/1-5.jpeg",
+  "/public/img/rooms/1-6.jpeg",
+  "/public/img/rooms/1-7.jpeg",
+  "/public/img/rooms/1-8.jpeg",
+  "/public/img/rooms/1-9.jpeg",
+  "/public/img/rooms/1-10.jpeg",
+  "/public/img/rooms/1-11.jpeg",
+  "/public/img/rooms/1-12.jpeg",
+  "/public/img/rooms/2-1.jpeg",
+  "/public/img/rooms/2-4.jpeg",
+  "/public/img/rooms/2-5.jpeg",
+  "/public/img/rooms/2-6.jpeg",
+  "/public/img/rooms/2-7.jpeg",
+  "/public/img/rooms/2-8.jpeg",
+  "/public/img/rooms/2-9.jpeg",
+  "/public/img/rooms/2-10.jpeg",
+  "/public/img/rooms/2-11.jpeg",
+  "/public/img/rooms/3-0.jpeg",
+  "/public/img/rooms/3-1.jpeg",
+  "/public/img/rooms/3-2.jpeg",
+  "/public/img/rooms/3-3.jpeg",
+  "/public/img/rooms/3-4.jpeg",
+  "/public/img/rooms/3-5.jpeg",
+  "/public/img/rooms/3-6.jpeg",
+  "/public/img/rooms/3-7.jpeg",
+  "/public/img/rooms/3-8.jpeg"
+];
+var Gallery = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[10%] md:left-[10%] md:w-[30%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "font-bold", children: "Unser Angebot" }),
+      " richtet sich an Erwachsene und umfasst Psychotherapie im Einzelsetting, Angeh\xF6rigengespr\xE4che sowie Paartherapie, individuell auf Sie abgestimmt."
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+      Card,
+      {
+        style: { background: "#c0deac" },
+        padding: 0,
+        className: "z-0 w-full h-[60vh] md:h-[50%] p-0 bg-transparent shadow-none md:top-[50%] md:left-[50%] md:w-[40%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+          ImageSlideshow_default,
+          {
+            images: roomImages.slice(0, 8),
+            alt: "Praxis Bild",
+            className: "w-full h-full",
+            interval: 3e3
+          }
+        )
+      }
+    ),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Card, { className: "w-full pt-4 px-4 pb-6 md:w-[30%] md:bottom-[10%] md:right-[10%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: "In einem vertrauensvollen und gesch\xFCtzten Rahmen begleiten und unterst\xFCtzen wir Sie professionell bei der Bew\xE4ltigung psychischer Belastungen und in herausfordernden Lebenssituationen." }) })
+  ] }) }) });
+};
+var Gallery2 = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("section", { className: "relative p-6 min-h-[48vh] h-auto md:h-screen overflow-auto", children: [
+    " ",
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "max-w-6xl mx-auto relative md:h-full flex flex-col gap-4", children: [
+      " ",
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(CardContainer, { className: "relative flex flex-col gap-4 md:block", children: [
+        " ",
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+          Card,
+          {
+            style: { background: "#dcefd9" },
+            padding: 0,
+            className: "z-0 w-full h-[50vh] md:h-[40%] p-0 bg-transparent shadow-none md:top-[18%] md:left-[70%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+              ImageSlideshow_default,
+              {
+                images: roomImages.slice(8, 16),
+                alt: "Praxis Bild",
+                className: "w-full h-full",
+                interval: 3500
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+          Card,
+          {
+            padding: 0,
+            style: { background: "#dcefd9" },
+            className: "z-0 w-full h-[50vh] md:h-[40%] p-0 bg-transparent shadow-none md:top-[60%] md:left-[60%] md:w-[50%] md:absolute md:-translate-x-1/2 md:-translate-y-1/2",
+            children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+              ImageSlideshow_default,
+              {
+                images: roomImages.slice(16),
+                alt: "Praxis Bild",
+                className: "w-full h-full",
+                interval: 4e3
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Card, { className: "z-10 w-full pt-4 px-4 pb-6 md:top-[5%] md:left-[35%] md:w-[35%] md:absolute", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("p", { className: "text-gray-700 font-thin text-2xl leading-snug break-words", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "font-bold", children: "Unser Team" }),
+          " besteht aus drei Fachpsychologinnen f\xFCr Psychotherapie sowie einer Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie. Wir arbeiten mit Methoden aus der kognitiv verhaltenstherapeutischen sowie systemischen Psychotherapie."
+        ] }) })
       ] })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(ContactForm_default, { recipientEmail: "a@pycho.ch" })
+    ] })
   ] });
 };
 var Page_default = {
   main: Page,
-  title: "Dr. med. Dipl. Psych. Annette Gnatzy"
+  title: "Psychotherapie Basel - Angebot"
 };
 export {
   Page_default as default
