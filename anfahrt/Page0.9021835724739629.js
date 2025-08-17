@@ -20274,14 +20274,6 @@ var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
 var import_jsx_runtime9 = __toESM(require_jsx_runtime(), 1);
 var teamMembers = [
   {
-    name: "Dr. med. Dipl.-Psych. Annette Gnatzy",
-    title: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie",
-    description: "Spezialisiert auf depressive Krisen, Burn-out, PTBS, Traumafolgest\xF6rungen und \xC4ngste",
-    image: "/public/img/annette.jpeg",
-    profileLink: "/team/annette-gnatzy",
-    formLink: "/team/annette-gnatzy#kontaktformular"
-  },
-  {
     name: "M.Sc. Stefanie Mujic-Urech",
     title: "Eidg. anerkannte Psychotherapeutin",
     description: "Fachpsychologin f\xFCr Psychotherapie FSP",
@@ -20304,6 +20296,14 @@ var teamMembers = [
     image: "/public/img/kim.jpeg",
     formLink: "/team/kim-buchmueller#kontaktformular",
     profileLink: "/team/kim-buchmueller"
+  },
+  {
+    name: "Dr. med. Dipl.-Psych. Annette Gnatzy",
+    title: "Fach\xE4rztin f\xFCr Psychiatrie und Psychotherapie",
+    description: "",
+    image: "/public/img/annette.jpeg",
+    profileLink: "/team/annette-gnatzy",
+    formLink: "/team/annette-gnatzy#kontaktformular"
   }
 ];
 
