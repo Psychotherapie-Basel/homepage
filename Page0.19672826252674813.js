@@ -20292,7 +20292,7 @@ var WelcomeSection = () => {
     "section",
     {
       className: "relative flex items-end justify-center text-center flex-col gap-6 h-screen overflow-hidden bg-fixed bg-center bg-cover",
-      style: { backgroundImage: "url('/public/img/bg-1.png')" },
+      style: { backgroundImage: "url('/public/img/bg-2.png')" },
       children: [
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "absolute inset-0 bg-[#fff8e9bf] bg-opacity-20 z-10" }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Card, { className: "z-10  md:top-[65%] md:left-[10%] w-full  md:w-[80%] rounded-none md:rounded-3xl", children: [
