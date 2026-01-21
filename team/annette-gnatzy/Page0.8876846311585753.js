@@ -20264,7 +20264,6 @@ var Footer = () => {
 var Footer_default = Footer;
 
 // src/team/annette-gnatzy/Page.tsx
-init_ContactForm();
 var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
 var Page = () => {
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
@@ -20275,6 +20274,17 @@ var Page = () => {
 };
 var Content = () => {
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("section", { className: "max-w-3xl mx-auto mt-24 px-4 text-center text-[#fff8e9]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+      "span",
+      {
+        className: "text-2xl text-center block italic ",
+        style: {
+          marginBottom: "2rem",
+          color: "grey"
+        },
+        children: "Aktuell nicht verf\xFCgbar"
+      }
+    ),
     /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-48 h-48 mx-auto", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
       "img",
       {
@@ -20332,8 +20342,7 @@ var Content = () => {
           "EMDIRA (Freiburg)"
         ].map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("li", { className: "mt-2 text-base leading-relaxed", children: item }, idx)) })
       ] })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(ContactForm_default, { recipientEmail: "praxis.gnatzy@hin.ch" })
+    ] })
   ] });
 };
 var Page_default = {
